@@ -1,0 +1,196 @@
+#themerz-settings-main{
+	width:670px;
+	margin: 20px auto;
+	padding:10px 20px;
+	font-size:12px;
+	font-weight:normal;
+	line-height:20px;
+	color:#666;	
+}
+.colorSelector {
+	position: relative;
+	width: 22px;
+	height: 22px;
+	border:1px solid #CCC;
+	float:left;
+	margin:5px;
+}
+.colorSelector div {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 16px;
+	height: 16px;
+}
+
+#themerz-settings-main h1{
+	font-size:22px;
+	font-weight:normal;
+	background: transparent url("../images/dots-title.gif") 0 6px repeat-x;
+	color:#000;
+	font-family: 'Cuprum', Arial, sans-serif !important;
+}
+#themerz-settings-main h1 span{
+	background: white url("../images/fs_icon.png") 0 3px no-repeat;
+	padding: 0 15px 0 70px;
+}
+#themerz-settings-main h3{
+	font-family: 'Cuprum', Arial, sans-serif !important;
+	font-size:18px;
+	font-weight:normal;
+	background: transparent url("../images/dots.gif") 0 6px repeat-x;
+	color:#666;
+}
+#themerz-settings-main h3 span{
+	background:#FFF;
+	padding-right:10px;
+}
+#themerz-settings-main h3 span.font-settings{
+	background: #FFF;
+}
+
+#themerz-settings-main input.text, #themerz-settings-main textarea.textarea {
+	border-top: 1px solid #7C7C7C;
+	border-left: 1px solid #C3C3C3;
+	border-right: 1px solid #C3C3C3;
+	border-bottom: 1px solid #DDD;
+	background: white url("../images/fieldbg.gif") repeat-x top;
+	padding:4px 10px;
+	font-size:12px;
+	color:#999;
+	margin:5px 10px 5px 0;
+	width:180px;
+}
+#themerz-settings-main textarea.textarea {
+	height:100px;
+}
+#themerz-settings-main label.label{
+	font-size:12px;
+	padding:8px 0;
+	width:120px;
+	cursor:default;
+}
+#themerz-settings-main label.hint{
+	font-size:12px;
+	padding:4px 10px;
+	cursor:default;
+	color:#999;
+	margin:4px;
+	background:#EEE;
+}
+#themerz-settings-main span.hint{
+	color:#AAA;
+}
+#themerz-settings-main select{
+	font-size:12px;
+	color:#999;
+	padding:4px 5px;
+	margin:5px 10px 5px 0;
+	width:100px;
+}
+#themerz-settings-main .background_select{
+	font-size:12px;
+	color:#999;
+	margin:5px 10px 5px 0;
+	width:200px;
+}
+#themerz-settings-main .background_preview{
+	width:75px;
+	height:25px;
+	margin:5px 10px 5px 0;
+	border:1px solid #CCC;
+	float:left;
+}
+#themerz-settings-main fieldset{
+	float:left;
+	margin:0;
+	padding:0;
+}
+#themerz-settings-main a.buttons, #themerz-settings-main input.buttons {
+	font-family: 'Cuprum', Arial, sans-serif !important;
+	cursor: pointer;
+	color: white;
+	background: #003A88;
+	text-shadow: 0 -1px 0 #222;
+	-webkit-box-shadow: 0 2px 4px #999;
+	-moz-box-shadow: 0 2px 4px #999;
+	box-shadow: 0 2px 4px #999;
+	border: 0;
+	padding: 6px;
+	text-decoration: none;
+	margin:0 5px 0 0;
+	font-size:16px;
+	line-height:30px;
+}
+
+#themerz-settings-main .clearfix{
+	clear:both;
+	margin:10px 0 0 0;}
+#themerz-settings-main .clearfix_last{
+	clear:both;}
+.browse_image{
+	margin:0 10px 10px 0;}
+fieldset { border:0; }	
+.background_select .ui-icon{
+	width:16px;
+	height:16px;
+	border:1px solid #CCC;
+	background-repeat:repeat;
+	background-color:#FFF;}
+label,select,.ui-select-menu { float: left; margin-right: 10px; }
+select { width: 250px; }
+.htabs {
+	height: 30px;
+	line-height: 16px;
+	border-bottom: 1px solid #F2F1ED;
+	margin:0;
+	clear:both;
+}
+.htabs a {
+	background: #DDD;
+	padding: 7px 15px 6px 15px;
+	float: left;
+	font-family: 'Cuprum', Arial, sans-serif !important;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	text-transform:uppercase;
+	color: #555;
+	margin-right: 2px;
+	display: none;
+	font-weight:normal;
+}
+.htabs a.selected {
+	padding-bottom: 7px;
+	background: #F2F1ED;
+}
+.tab-content {
+	border: 10px solid #F2F1ED;
+	padding: 10px;
+	margin-bottom: 20px;
+	z-index: 2;
+	overflow: auto;
+}
+div.buttons{
+	float:right;}
+#themerz-settings-main .boxes{
+	border:1px solid #DDD;
+	padding:10px;
+	float:left;
+	margin-right:17px;
+	margin-bottom:10px;}
+#themerz-settings-main .last{
+	margin-right:0;
+	float:right;}
+#themerz-settings-main .content-boxes{
+	border:1px solid #DDD;
+	padding:10px;
+	margin-bottom:10px;}
+#themerz-settings-main .content-boxes .contents{
+	float:right;}
+#themerz-settings-main  td .hint{
+		float:right;}
+#themerz-settings-main  td .textarea, #themerz-settings-main  td .text{
+		float:right;}
+#themerz-settings-main .left{
+	float:left;}
