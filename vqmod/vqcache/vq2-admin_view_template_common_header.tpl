@@ -82,9 +82,6 @@ $(document).ready(function(){
 			<li><a href="<?php echo $news; ?>"><?php echo $text_news; ?></a></li>
 			
 
-			<li><a href="<?php echo $homepage; ?>"><?php echo $text_homepage; ?></a></li>
-			
-
 			<li><a href="<?php echo $faq; ?>"><?php echo $text_faq; ?></a></li>
 			
         </ul>
@@ -127,7 +124,6 @@ $(document).ready(function(){
             <ul>
               <li><a href="<?php echo $layout; ?>"><?php echo $text_layout; ?></a></li>
               <li><a href="<?php echo $banner; ?>"><?php echo $text_banner; ?></a></li>
-	      <li><a href="<?php echo $slider; ?>"><?php echo $text_slider; ?></a></li>
             </ul>
           </li>
           <li><a class="parent"><?php echo $text_users; ?></a>

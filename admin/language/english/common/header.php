@@ -8,7 +8,6 @@ $_['text_attribute']                   = 'Attributes';
 $_['text_attribute_group']             = 'Attribute Groups';
 $_['text_backup']                      = 'Backup / Restore';
 $_['text_banner']                      = 'Banners';
-$_['text_slider']                      = 'Advanced Slider';
 $_['text_catalog']                     = 'Catalog';
 $_['text_category']                    = 'Categories';
 $_['text_confirm']			           = 'Delete/Uninstall cannot be undone! Are you sure you want to do this?';

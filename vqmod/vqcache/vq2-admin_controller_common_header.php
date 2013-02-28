@@ -26,7 +26,6 @@ class ControllerCommonHeader extends Controller {
 		$this->data['text_attribute_group'] = $this->language->get('text_attribute_group');
 		$this->data['text_backup'] = $this->language->get('text_backup');
 		$this->data['text_banner'] = $this->language->get('text_banner');
-		$this->data['text_slider'] = $this->language->get('text_slider');
 		$this->data['text_catalog'] = $this->language->get('text_catalog');
 		$this->data['text_category'] = $this->language->get('text_category');
 		$this->data['text_confirm'] = $this->language->get('text_confirm');
@@ -108,10 +107,6 @@ class ControllerCommonHeader extends Controller {
 			$this->load->language('module/news');
 			$this->data['text_news'] = $this->language->get('text_news');
 			
-
-			$this->load->language('module/homepage');
-	      	$this->data['text_homepage'] = $this->language->get('text_homepage');
-			
 		
 		if (!$this->user->isLogged() || !isset($this->request->get['token']) || !isset($this->session->data['token']) || ($this->request->get['token'] != $this->session->data['token'])) {
 			$this->data['logged'] = '';
@@ -126,7 +121,6 @@ class ControllerCommonHeader extends Controller {
 			$this->data['attribute_group'] = $this->url->link('catalog/attribute_group', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['backup'] = $this->url->link('tool/backup', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['banner'] = $this->url->link('design/banner', 'token=' . $this->session->data['token'], 'SSL');
-			$this->data['slider'] = $this->url->link('design/slider', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['category'] = $this->url->link('catalog/category', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['country'] = $this->url->link('localisation/country', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['coupon'] = $this->url->link('sale/coupon', 'token=' . $this->session->data['token'], 'SSL');
@@ -183,9 +177,6 @@ class ControllerCommonHeader extends Controller {
 			$this->data['zone'] = $this->url->link('localisation/zone', 'token=' . $this->session->data['token'], 'SSL');
 
 			$this->data['news'] = $this->url->link('module/news/listing', 'token=' . $this->session->data['token'], 'SSL');
-			
-
-			$this->data['homepage'] = $this->url->link('module/homepage/listing', 'token=' . $this->session->data['token'], 'SSL');
 			
 
 			$this->data['faq'] = $this->url->link('module/faq/listing', 'token=' . $this->session->data['token'], 'SSL');

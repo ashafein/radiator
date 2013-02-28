@@ -118,7 +118,6 @@ $(document).ready(function(){
             <ul>
               <li><a href="<?php echo $layout; ?>"><?php echo $text_layout; ?></a></li>
               <li><a href="<?php echo $banner; ?>"><?php echo $text_banner; ?></a></li>
-	      <li><a href="<?php echo $slider; ?>"><?php echo $text_slider; ?></a></li>
             </ul>
           </li>
           <li><a class="parent"><?php echo $text_users; ?></a>
