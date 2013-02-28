@@ -9,8 +9,9 @@ config.php~
 .htaccess.txt
 .htaccess
 .gitignore~
-
-
+mods.cashe
+vq2-catalog_view_theme_default_template_common_header.tpl
+mods.cashe
 
 # Folders #
 ######################
@@ -19,3 +20,5 @@ install/
 system/
 mymodules/
 Mybackup/
+vqmod/
+
