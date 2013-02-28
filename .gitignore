@@ -1,0 +1,21 @@
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+config.php
+config.php~
+.htaccess.txt
+.htaccess
+.gitignore~
+
+
+
+# Folders #
+######################
+ModulesTMP/
+install/
+system/
+mymodules/
+Mybackup/
