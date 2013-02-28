@@ -2,6 +2,7 @@
 // Text
 $_['text_shopping_cart']  = 'Корзина';
 $_['text_home']     = 'Главная';
+$_['text_news']     = 'Новости';
 $_['text_blog']     = 'Блог';
 $_['text_wishlist'] = 'Закладки (%s)';
 $_['text_compare']  = 'Сравнение товаров (%s)';

@@ -66,6 +66,7 @@ class ControllerCommonHeader extends Controller {
 		}
 		
 		$this->data['text_home'] = $this->language->get('text_home');
+        $this->data['text_news'] = $this->language->get('text_news');
 		$this->data['text_wishlist'] = sprintf($this->language->get('text_wishlist'), (isset($this->session->data['wishlist']) ? count($this->session->data['wishlist']) : 0));
 		$this->data['text_shopping_cart'] = $this->language->get('text_shopping_cart');
     	$this->data['text_search'] = $this->language->get('text_search');
@@ -76,12 +77,13 @@ class ControllerCommonHeader extends Controller {
         $this->data['text_faq'] = $this->language->get('text_faq');
 
 		$this->data['home'] = $this->url->link('common/home');
+        $this->data['news'] = $this->url->link('information/news');
 		$this->data['wishlist'] = $this->url->link('account/wishlist', '', 'SSL');
 		$this->data['logged'] = $this->customer->isLogged();
 		$this->data['account'] = $this->url->link('account/account', '', 'SSL');
 		$this->data['shopping_cart'] = $this->url->link('checkout/cart');
 		$this->data['checkout'] = $this->url->link('checkout/checkout', '', 'SSL');
-        $this->data['faq'] = $this->url->link('information/faq', '', 'SSL');
+        $this->data['faq'] = $this->url->link('information/faq');
 		
 		if (isset($this->request->get['filter_name'])) {
 			$this->data['filter_name'] = $this->request->get['filter_name'];
