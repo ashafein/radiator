@@ -32,7 +32,7 @@
       <file leaf-file-name="numbers.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/controller/module/numbers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="43" selection-start="333" selection-end="333" vertical-scroll-proportion="0.2576336">
+            <state line="9" column="43" selection-start="333" selection-end="333" vertical-scroll-proportion="0.27217743">
               <folding />
             </state>
           </provider>
@@ -96,9 +96,9 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="64" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1303" />
-    <option name="height" value="773" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -558,7 +558,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1303" height="773" extended-state="6" />
+    <frame x="64" y="24" width="1303" height="745" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -746,7 +746,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/controller/module/numbers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="43" selection-start="333" selection-end="333" vertical-scroll-proportion="0.2576336">
+        <state line="9" column="43" selection-start="333" selection-end="333" vertical-scroll-proportion="0.27217743">
           <folding />
         </state>
       </provider>
