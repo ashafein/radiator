@@ -48,6 +48,10 @@ class ControllerCommonHeader extends Controller {
 		$this->data['text_help'] = $this->language->get('text_help');
 		$this->data['text_information'] = $this->language->get('text_information');
 
+			$this->load->language('module/numbers');
+			$this->data['text_numbers'] = $this->language->get('text_numbers');
+			
+
 			$this->load->language('module/faq');
 			$this->data['text_faq'] = $this->language->get('text_faq');
 			
@@ -175,6 +179,9 @@ class ControllerCommonHeader extends Controller {
 			$this->data['weight_class'] = $this->url->link('localisation/weight_class', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['length_class'] = $this->url->link('localisation/length_class', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['zone'] = $this->url->link('localisation/zone', 'token=' . $this->session->data['token'], 'SSL');
+
+			$this->data['numbers'] = $this->url->link('module/numbers', 'token=' . $this->session->data['token'], 'SSL');
+			
 
 			$this->data['news'] = $this->url->link('module/news/listing', 'token=' . $this->session->data['token'], 'SSL');
 			

@@ -555,3 +555,40 @@ table.form > tbody > tr > td {
 	position: relative;
 	top: 3px;
 }
+
+.contacts .con-line,
+.content .contacts {
+    width: 99%;
+    float: left;
+}
+
+.contacts .con-line{
+    border-bottom: 1px solid #F0F0F0;
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+
+.contacts .con-line div {
+    display: inline-block;
+    float:left;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.contacts .con-line .con-box {
+    margin-right: 30px;
+}
+
+.contacts .con-line .con-title {
+    line-height: 19px;
+}
+
+.contacts .con-line .con-checkbox-title {
+
+    margin-right: 4px;
+}
+
+.contacts .con-line input {
+    text-align: right;
+    letter-spacing:1px;
+}
