@@ -1,0 +1,39 @@
+<modification>
+
+	<id>Numbers for OpenCart 1.5.1.x</id>
+	<version>1.0.0</version>
+	<vqmver>1.2.3</vqmver>
+	<author>Fido-X</author>
+
+	<file name="admin/controller/common/header.php">
+		<operation>
+			<search position="after" index="1"><![CDATA[
+			$this->data['text_information'] = $this->language->get('text_information');
+			]]></search>
+			<add><![CDATA[
+			$this->load->language('module/numbers');
+			$this->data['text_numbers'] = $this->language->get('text_numbers');
+			]]></add>
+		</operation>
+		<operation>
+			<search position="after" index="1"><![CDATA[
+			$this->data['zone'] = $this->url->link('localisation/zone', 'token=' . $this->session->data['token'], 'SSL');
+			]]></search>
+			<add><![CDATA[
+			$this->data['numbers'] = $this->url->link('module/numbers', 'token=' . $this->session->data['token'], 'SSL');
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="admin/view/template/common/header.tpl">
+		<operation>
+			<search position="after" index="1"><![CDATA[
+			<li><a href="<?php echo $information; ?>"><?php echo $text_information; ?></a></li>
+			]]></search>
+			<add><![CDATA[
+			<li><a href="<?php echo $numbers; ?>"><?php echo $text_numbers; ?></a></li>
+			]]></add>
+		</operation>
+	</file>
+
+</modification>

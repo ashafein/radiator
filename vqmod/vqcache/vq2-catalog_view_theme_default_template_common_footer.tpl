@@ -12,6 +12,9 @@
       <div class="column">
         <h3><?php echo $text_service; ?></h3>
         <ul>
+
+			<li><a href="<?php echo $faq; ?>"><?php echo $text_faq; ?></a></li>
+			
           <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
           <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
           <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>

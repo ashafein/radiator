@@ -31,6 +31,14 @@ class ControllerModuleFeatured extends Controller {
 					$image = false;
 				}
 
+                if ($product_info) {
+                    if ($product_info['description']) {
+                        $description =  utf8_substr(strip_tags(html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8')), 0, 100) . '..';
+                    } else {
+                        $image = false;
+                    }
+                }
+
 				if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
 					$price = $this->currency->format($this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax')));
 				} else {
@@ -56,6 +64,7 @@ class ControllerModuleFeatured extends Controller {
 					'price'   	 => $price,
 					'special' 	 => $special,
 					'rating'     => $rating,
+                    'description'=> $description,
 					'reviews'    => sprintf($this->language->get('text_reviews'), (int)$product_info['reviews']),
 					'href'    	 => $this->url->link('product/product', 'product_id=' . $product_info['product_id']),
 				);

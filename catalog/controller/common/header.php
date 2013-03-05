@@ -141,7 +141,7 @@ class ControllerCommonHeader extends Controller {
 		} else {
 			$this->template = 'default/template/common/header.tpl';
 		}
-		
+
     	$this->render();
 	} 	
 }

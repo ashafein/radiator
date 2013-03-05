@@ -114,7 +114,7 @@ class ControllerProductProduct extends Controller {
 			
 			if (isset($this->request->get['filter_description'])) {
 				$url .= '&filter_description=' . $this->request->get['filter_description'];
-			}	
+			}
 						
 			if (isset($this->request->get['filter_category_id'])) {
 				$url .= '&filter_category_id=' . $this->request->get['filter_category_id'];

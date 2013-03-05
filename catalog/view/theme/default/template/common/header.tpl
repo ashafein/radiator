@@ -17,6 +17,8 @@
 <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
 <?php } ?>
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/stylesheet.css" />
+<link media="screen" href="catalog/view/theme/default/stylesheet/slideshow.css" type="text/css" rel="stylesheet">
+<link media="screen" href="catalog/view/theme/default/stylesheet/carousel.css" type="text/css" rel="stylesheet">
 <?php foreach ($styles as $style) { ?>
 <link rel="<?php echo $style['rel']; ?>" type="text/css" href="<?php echo $style['href']; ?>" media="<?php echo $style['media']; ?>" />
 <?php } ?>
@@ -28,6 +30,7 @@
 <link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/colorbox/colorbox.css" media="screen" />
 <script type="text/javascript" src="catalog/view/javascript/jquery/tabs.js"></script>
 <script type="text/javascript" src="catalog/view/javascript/common.js"></script>
+<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
 <?php foreach ($scripts as $script) { ?>
 <script type="text/javascript" src="<?php echo $script; ?>"></script>
 <?php } ?>
@@ -43,54 +46,84 @@ DD_belatedPNG.fix('#logo img');
 <![endif]-->
 <?php echo $google_analytics; ?>
 </head>
-<body>
-<div id="container">
-<div id="header">
-  <?php if ($logo) { ?>
-  <div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
-  <?php } ?>
-  <?php echo $language; ?>
-  <?php echo $currency; ?>
-  <?php echo $cart; ?>
-  <div id="search">
-    <div class="button-search"></div>
-    <?php if ($filter_name) { ?>
-    <input type="text" name="filter_name" value="<?php echo $filter_name; ?>" />
-    <?php } else { ?>
-    <input type="text" name="filter_name" value="<?php echo $text_search; ?>" onclick="this.value = '';" onkeydown="this.style.color = '#000000';" />
-    <?php } ?>
-  </div>
-  <div id="welcome">
-    <?php if (!$logged) { ?>
-    <?php echo $text_welcome; ?>
-    <?php } else { ?>
-    <?php echo $text_logged; ?>
-    <?php } ?>
-  </div>
-  <div class="links"><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a><a href="<?php echo $news; ?>"><?php echo $text_news; ?></a><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a><a href="<?php echo $faq; ?>"><?php echo $text_faq; ?></a></div>
-</div>
-<?php if ($categories) { ?>
-<div id="menu">
-  <ul>
-    <?php foreach ($categories as $category) { ?>
-    <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
-      <?php if ($category['children']) { ?>
-      <div>
-        <?php for ($i = 0; $i < count($category['children']);) { ?>
-        <ul>
-          <?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
-          <?php for (; $i < $j; $i++) { ?>
-          <?php if (isset($category['children'][$i])) { ?>
-          <li><a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name']; ?></a></li>
+<body class="<?php echo isset($_REQUEST['body_class'])? $_REQUEST['body_class'] : ''; ?>" >
+<?php echo isset($_REQUEST['page_bg_style'])? $_REQUEST['page_bg_style'] : ''; ?>
+<div class="body_bg">
+    <div id="container">
+        <div id="header">
+          <?php echo $cart; ?>
+          <?php if ($logo) { ?>
+          <div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
           <?php } ?>
-          <?php } ?>
-        </ul>
+
+          <?php echo $language; ?>
+          <?php echo $currency; ?>
+          <div>
+              <div id="welcome">
+                  <?php if (!$logged) { ?>
+                  <?php echo $text_welcome; ?>
+                  <?php } else { ?>
+                  <?php echo $text_logged; ?>
+                  <?php } ?>
+              </div>
+              <div id="search">
+                <div class="button-search"></div>
+                <?php if ($filter_name) { ?>
+                <input type="text" name="filter_name" value="<?php echo $filter_name; ?>" />
+                <?php } else { ?>
+                <input type="text" name="filter_name" value="<?php echo $text_search; ?>" onclick="this.value = '';" onkeydown="this.style.color = '#000000';" />
+                <?php } ?>
+              </div>
+
+              <div class="linkz">
+                  <ul><li>
+                         <a  class="home" href="<?php echo $home; ?>"><?php echo $text_home; ?></a>
+                      </li>
+                      <li>
+                         <a class="news" href="<?php echo $news; ?>"><?php echo $text_news; ?></a>
+                      </li>
+                      <li>
+                         <a class="wishlist" href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a>
+                      </li>
+                      <li>
+                         <a class="account" href="<?php echo $account; ?>"><?php echo $text_account; ?></a>
+                      </li>
+                      <li>
+                          <a class="cart" href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a>
+                      </li>
+                      <li>
+                          <a class="checkout" href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a>
+                      </li>
+                      <li>
+                          <a class="faqs" href="<?php echo $faq; ?>"><?php echo $text_faq; ?></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+        <?php if ($categories) { ?>
+        <div id="menu">
+          <ul>
+            <?php foreach ($categories as $category) { ?>
+            <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
+                <?php if ($category['children']) { ?>
+              <div>
+                <?php for ($i = 0; $i < count($category['children']);) { ?>
+                <ul>
+                  <?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
+                  <?php for (; $i < $j; $i++) { ?>
+                  <?php if (isset($category['children'][$i])) { ?>
+                  <li><a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name']; ?></a></li>
+                  <?php } ?>
+                  <?php } ?>
+                </ul>
+                <?php } ?>
+              </div>
+                <img style="margin-bottom:2px;margin-right:11px;margin-left:-16px;" src="catalog/view/theme/default/image/arrow-down.png">
+                <?php } ?>
+            </li>
+            <?php } ?>
+          </ul>
+        </div>
         <?php } ?>
-      </div>
-      <?php } ?>
-    </li>
-    <?php } ?>
-  </ul>
-</div>
-<?php } ?>
-<div id="notification"></div>
+    </div>
