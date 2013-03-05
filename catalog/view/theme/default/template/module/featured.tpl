@@ -43,19 +43,16 @@
           </div>
         <?php } ?>
 
-        <?php if ($product['price']) { ?>
-        <div class="price">
-          <?php if (!$product['special']) { ?>
-          <?php echo $product['price']; ?>
-          <?php } else { ?>
-          <span class="price-old"><?php echo $product['price']; ?></span>
-          <?php } ?>
-        </div>
-        <?php } ?>
         <?php if ($product['rating']) { ?>
         <div class="rating"><img src="catalog/view/theme/default/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
         <?php } ?>
-        <div class="cart"><input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" /></div>
+          <div class="priced">
+              <ul>
+                  <li>
+                      <a onclick="addToCart('<?php echo $product['product_id']; ?>');"> <?php echo $button_cart; ?> </a>
+                  </li>
+              </ul>
+          </div>
       </div>
       <?php } ?>
     </div>

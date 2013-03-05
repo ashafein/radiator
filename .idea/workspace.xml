@@ -35,7 +35,7 @@
       <file leaf-file-name="featured.tpl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/module/featured.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="63" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.404">
+            <state line="51" column="116" selection-start="2438" selection-end="2438" vertical-scroll-proportion="0.67">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -648,7 +648,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/module/featured.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="63" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.404">
+        <state line="51" column="116" selection-start="2438" selection-end="2438" vertical-scroll-proportion="0.67">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
