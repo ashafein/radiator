@@ -15,6 +15,7 @@
                  <div class="out_bg">
                      <a href="<?php echo $product['href']; ?>">
                          <?php if($product['special']) { ?>
+                            <?php echo '<div id="sale"></div>'; ?>
                              <?php echo '<span class="price-new">'; ?>
                                  <?php echo $product['special']; ?>
                                      <?php echo '<span class="price-old">'; ?>

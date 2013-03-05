@@ -127,3 +127,4 @@ DD_belatedPNG.fix('#logo img');
         </div>
         <?php } ?>
     </div>
+    <br>

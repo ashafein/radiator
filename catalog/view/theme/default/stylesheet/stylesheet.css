@@ -23,7 +23,7 @@ body a {
     outline: 0 none;
 }
 body, td, th, input, textarea, select, a {
-    font-size: 12px;
+    font-size: 11px;
 }
 h1, .welcome {
     color: #555555;
@@ -2946,4 +2946,8 @@ input.add {
 .content_lines {
     background: url("../image/lines.gif") repeat scroll 0 0 transparent;
     padding: 6px;
+}
+
+.icart-footer-container a {
+    font-size: 12px;
 }
