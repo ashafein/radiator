@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>">
+<html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>" xmlns="http://www.w3.org/1999/html">
 <head>
 <meta charset="UTF-8" />
 <title><?php echo $title; ?></title>
@@ -49,6 +49,18 @@ DD_belatedPNG.fix('#logo img');
 <body class="<?php echo isset($_REQUEST['body_class'])? $_REQUEST['body_class'] : ''; ?>" >
 <?php echo isset($_REQUEST['page_bg_style'])? $_REQUEST['page_bg_style'] : ''; ?>
 <div class="body_bg">
+    <?php if($numbers) { ?>
+        <?php echo '<div class="header-contacts">';?>
+            <?php echo '<ul>';?>
+                <?php foreach($numbers as $number) {  ?>
+                    <?php echo '<li>';?>
+                        <?php echo $number['number'];?>
+                    <?php echo '</li>';?>
+                <?php } ?>
+            <?php echo '</ul>';?>
+        <?php echo '</div>';?>
+    <?php } ?>
+
     <div id="container">
         <div id="header">
           <?php echo $cart; ?>
@@ -69,12 +81,18 @@ DD_belatedPNG.fix('#logo img');
               <div id="search">
                 <div class="button-search"></div>
                 <?php if ($filter_name) { ?>
-                <input type="text" name="filter_name" value="<?php echo $filter_name; ?>" />
+                    <input type="text" name="filter_name" value="<?php echo $filter_name; ?>" />
                 <?php } else { ?>
-                <input type="text" name="filter_name" value="<?php echo $text_search; ?>" onclick="this.value = '';" onkeydown="this.style.color = '#000000';" />
+                    <input type="text" name="filter_name" value="<?php echo $text_search; ?>" onclick="this.value = '';" onkeydown="this.style.color = '#000000';" />
                 <?php } ?>
               </div>
 
+              <?php if($help_number) { ?>
+                  <?php echo '<div class="help-contact">';?>
+                        <?php echo '<span class="help-text">'.$online_help.'</span>';?>
+                              <?php echo '<span class="help-number">'.$help_number['number'].'</span>';?>
+                  <?php echo '</div>';?>
+              <?php } ?>
               <div class="linkz">
                   <ul><li>
                          <a  class="home" href="<?php echo $home; ?>"><?php echo $text_home; ?></a>

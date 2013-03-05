@@ -44,6 +44,7 @@ class ControllerCommonHeader extends Controller {
 		}
 				
 		$this->language->load('common/header');
+
 		
 		if (isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
 			$server = HTTPS_IMAGE;
@@ -90,7 +91,20 @@ class ControllerCommonHeader extends Controller {
 		} else {
 			$this->data['filter_name'] = '';
 		}
-		
+
+        //Numbers
+        $this->load->model('fido/numbers');
+        $this->language->load('module/numbers');
+
+        $this->data['online_help'] = $this->language->get('online_help');
+
+        $numbers = $this->model_fido_numbers->getNumbers();
+
+        $this->data['numbers'] = $numbers;
+        if( $help_number = $this->model_fido_numbers->getHelpNumber()) {
+            $this->data['help_number'] = $help_number[0];
+        }
+
 		// Menu
 		$this->load->model('catalog/category');
 		
