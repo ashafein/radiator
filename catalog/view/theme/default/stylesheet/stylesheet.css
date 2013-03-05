@@ -37,8 +37,21 @@ body a {
     outline: 0 none;
 
 }
-body, td, th, input, textarea, select, a {
+
+#header a,
+#header select,
+#header input,
+#header textarea,
+#header #welcome {
     font-size: 11px;
+}
+
+.heading a span {
+    font-size: 12px;
+}
+
+body, td, th, input, textarea, select, a {
+    font-size: 12px;
 }
 h1, .welcome {
     color: #544027 !important;
@@ -48,7 +61,7 @@ h1, .welcome {
     margin-top: 0;
     font-weight: bold !important;
     padding: 0;
-    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    _text-shadow: 0 1px rgba(255, 255, 255, 0.5);
 }
 h2 {
     color: #000000;
@@ -108,24 +121,33 @@ label {
     float: left;
     list-style: none outside none;
     margin-left: 5px;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+
+    background-image: linear-gradient(bottom, rgb(255,194,52) 0%, rgb(255,239,97) 99%);
+    background-image: -o-linear-gradient(bottom, rgb(255,194,52) 0%, rgb(255,239,97) 99%);
+    background-image: -moz-linear-gradient(bottom, rgb(255,194,52) 0%, rgb(255,239,97) 99%);
+    background-image: -webkit-linear-gradient(bottom, rgb(255,194,52) 0%, rgb(255,239,97) 99%);
+    background-image: -ms-linear-gradient(bottom, rgb(255,194,52) 0%, rgb(255,239,97) 99%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(255,194,52)),
+        color-stop(0.99, rgb(255,239,97))
+    );
 }
 .linkz ul li:hover {
     background: none repeat scroll 0 0 #F1F1F1;
 }
 .linkz ul li a {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background-color: rgba(0, 0, 0, 0.05);
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.25));
-    border-color: #CFCFCF #D6D6D6 #C8C8C8;
-    border-image: none;
-    border-radius: 3px 3px 3px 3px;
-    border-style: solid;
-    border-width: 1px;
-    box-shadow: 0 1px white inset, 0 0 0 1px rgba(255, 255, 255, 0.698) inset, 0 2px #DADADA, 0 3px #C4C4C4, 0 4px 3px rgba(0, 0, 0, 0.1);
-    color: #888888;
+
+
+    border-radius: 5px 5px 5px 5px;
+    color: #6c4116;
     display: block;
     float: left;
     font-family: Arial,Helvetica,sans-serif;
@@ -136,11 +158,9 @@ label {
     outline: 0 none;
     padding: 25px 12px 2px;
     text-decoration: none;
-    text-shadow: 0 1px white;
 }
 .linkz ul li a:hover {
     color: #539F07;
-    text-shadow: 0 1px white, 0 0 20px white;
 }
 .linkz ul li a.home {
     background: url("../image/home.png") no-repeat scroll center top transparent;
@@ -534,7 +554,7 @@ label {
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.1) inset;
     color: #999999;
     margin-left: 7px;
-    padding: 6px 12px;
+    padding: 6px 9px;
     text-decoration: none;
     text-shadow: 0 1px #111111;
 }
@@ -991,7 +1011,7 @@ a.button span {
 .box-product .name a {
     color: #544027 ;
     display: block;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
     margin-bottom: 4px;
     margin-top: 4px;
@@ -2985,7 +3005,7 @@ button {
     background: url("../image/p_cor.png") no-repeat scroll right bottom #F3F3F3;
     border-left: 5px solid #556a1d;
     color: #544027;
-    font: 12px/20px Helvetica,Arial,sans-serif;
+    font: 13px/20px Helvetica,Arial,sans-serif;
     padding: 4px 4px 4px 8px;
     text-shadow: 1px 1px white;
 }
