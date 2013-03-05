@@ -21,7 +21,7 @@ body {
         color-stop(0.61, rgb(233,169,42)),
         color-stop(0.89, rgb(220,136,19))
     );
-    color: #000000;
+    color: #544027 ;
     font-family: Arial,Helvetica,sans-serif;
     margin: 0;
     padding: 0;
@@ -41,11 +41,12 @@ body, td, th, input, textarea, select, a {
     font-size: 11px;
 }
 h1, .welcome {
-    color: #555555;
+    color: #544027 !important;
     font: 30px ProximaNovaSoft,sans-serif;
     letter-spacing: -1px;
     margin-bottom: 20px;
     margin-top: 0;
+    font-weight: bold !important;
     padding: 0;
     text-shadow: 0 1px rgba(255, 255, 255, 0.5);
 }
@@ -230,7 +231,7 @@ label {
 
 .help-contact {
     float: right;
-    width: 570px;
+    width: 580px;
     margin: 10px 0px 10px 0px;
     text-align: right;
 }
@@ -241,10 +242,10 @@ label {
 
 .help-contact .help-number,
 .help-contact .help-text {
-    font-size: 25px;
+    font-size: 26px;
     font-style: italic;
     font-weight: bold;
-    margin-left: 20px;
+    margin-left: 11px;
 }
 
 .help-contact .help-number {
@@ -253,18 +254,18 @@ label {
     border-radius: 15px;
     margin-right: 10px;
     padding: 10px 15px 10px 15px;
-    background-image: linear-gradient(bottom, rgb(158,32,10) 35%, rgb(193,36,22) 73%);
-    background-image: -o-linear-gradient(bottom, rgb(158,32,10) 35%, rgb(193,36,22) 73%);
-    background-image: -moz-linear-gradient(bottom, rgb(158,32,10) 35%, rgb(193,36,22) 73%);
-    background-image: -webkit-linear-gradient(bottom, rgb(158,32,10) 35%, rgb(193,36,22) 73%);
-    background-image: -ms-linear-gradient(bottom, rgb(158,32,10) 35%, rgb(193,36,22) 73%);
+    background-image: linear-gradient(bottom, rgb(159,31,11) 19%, rgb(186,42,20) 61%);
+    background-image: -o-linear-gradient(bottom, rgb(159,31,11) 19%, rgb(186,42,20) 61%);
+    background-image: -moz-linear-gradient(bottom, rgb(159,31,11) 19%, rgb(186,42,20) 61%);
+    background-image: -webkit-linear-gradient(bottom, rgb(159,31,11) 19%, rgb(186,42,20) 61%);
+    background-image: -ms-linear-gradient(bottom, rgb(159,31,11) 19%, rgb(186,42,20) 61%);
 
     background-image: -webkit-gradient(
         linear,
         left bottom,
         left top,
-        color-stop(0.35, rgb(158,32,10)),
-        color-stop(0.73, rgb(193,36,22))
+        color-stop(0.19, rgb(159,31,11)),
+        color-stop(0.61, rgb(186,42,20))
     );
 }
 
@@ -915,7 +916,7 @@ a.button span {
 }
 .box .box-heading {
     background: url("../image/featured.png") no-repeat scroll center center transparent;
-    color: #999999;
+    color: #502012;
     font-size: 14px;
     font-weight: bold;
     height: 48px;
@@ -988,7 +989,7 @@ a.button span {
     width: 190px;
 }
 .box-product .name a {
-    color: #666666;
+    color: #544027 ;
     display: block;
     font-size: 11px;
     font-weight: bold;
@@ -997,7 +998,7 @@ a.button span {
     overflow: hidden;
     padding: 0 0 0 5px;
     text-decoration: none;
-    text-shadow: 0 1px #FFFFFF;
+
     white-space: nowrap;
 }
 .box-product .name a:after {
@@ -1025,7 +1026,7 @@ a.button span {
     text-decoration: none;
 }
 .box-product .priced ul {
-    color: #555555;
+    color: #544027 ;
     height: 28px;
     margin-top: -20px;
 }
@@ -1041,7 +1042,7 @@ a.button span {
 .box-product .priced ul li a {
     background: url("../image/cart_feat.png") no-repeat scroll left center #FFFFFF;
     border: 1px solid #E6E5E5;
-    color: #999999;
+    color: #544027;
     display: block;
     padding: 8px 10px 8px 30px;
     text-decoration: none;
@@ -2982,8 +2983,8 @@ button {
 }
 .welcome_text {
     background: url("../image/p_cor.png") no-repeat scroll right bottom #F3F3F3;
-    border-left: 2px solid #257EDF;
-    color: #6F6A58;
+    border-left: 5px solid #556a1d;
+    color: #544027;
     font: 12px/20px Helvetica,Arial,sans-serif;
     padding: 4px 4px 4px 8px;
     text-shadow: 1px 1px white;

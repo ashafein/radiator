@@ -162,12 +162,12 @@
 
 a.nivo-nextNav {
     background: url("../image/slide_arrows.png") no-repeat scroll right bottom transparent;
-    right: -36px;
+    right: -34px;
 }
 
 a.nivo-nextNav:hover {
     background: url("../image/slide_arrows.png") no-repeat scroll right top transparent;
-    right: -36px;
+    right: -34px;
 }
 
 a.nivo-prevNav:hover {
