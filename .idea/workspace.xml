@@ -32,7 +32,7 @@
       <file leaf-file-name="category.tpl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/product/category.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="26" selection-start="125" selection-end="125" vertical-scroll-proportion="-4.284501">
+            <state line="187" column="0" selection-start="7348" selection-end="7348" vertical-scroll-proportion="0.686">
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -120,8 +120,8 @@
         <option value="$PROJECT_DIR$/catalog/language/russian/product/category.php" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/login.tpl" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/forgotten.tpl" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/product/category.tpl" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/stylesheet/stylesheet.css" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/product/category.tpl" />
       </list>
     </option>
   </component>
@@ -851,7 +851,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/product/category.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="26" selection-start="125" selection-end="125" vertical-scroll-proportion="-4.284501">
+        <state line="187" column="0" selection-start="7348" selection-end="7348" vertical-scroll-proportion="0.686">
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#0;n#!!top" expanded="true" />
           </folding>
