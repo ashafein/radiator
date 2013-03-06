@@ -113,37 +113,55 @@ class ControllerCommonHeader extends Controller {
 		$this->data['categories'] = array();
 					
 		$categories = $this->model_catalog_category->getCategories(0);
-		
-		foreach ($categories as $category) {
+
+        foreach ($categories as $category) {
 			if ($category['top']) {
 				$children_data = array();
 				
 				$children = $this->model_catalog_category->getCategories($category['category_id']);
-				
 				foreach ($children as $child) {
 					$data = array(
 						'filter_category_id'  => $child['category_id'],
 						'filter_sub_category' => true
 					);
-					
 					$product_total = $this->model_catalog_product->getTotalProducts($data);
-									
-					$children_data[] = array(
-						'name'  => $child['name'] . ($this->config->get('config_product_count') ? ' (' . $product_total . ')' : ''),
-						'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id'])	
-					);						
-				}
-				
-				// Level 1
+                    $children_level2 = $this->model_catalog_category->getCategories($child['category_id']);
+                    $children_data_level2 = array();
+                    foreach ($children_level2 as $child_level2) {
+                        $data_level2 = array(
+                            'filter_category_id'  => $child_level2['category_id'],
+                            'filter_sub_category' => true
+                        );
+                        $product_total_level2 = '';
+                        if ($this->config->get('config_product_count')) {
+                            $product_total_level2 = ' (' . $this->model_catalog_product->getTotalProducts($data_level2) . ')';
+                        }
+
+                        $children_data_level2[] = array(
+                            'name'  =>  $child_level2['name'] . $product_total_level2,
+                            'href'  => $this->url->link('product/category', 'path=' . $child['category_id'] . '_' . $child_level2['category_id']),
+                            'id' => $category['category_id']. '_' . $child['category_id']. '_' . $child_level2['category_id']
+                        );
+                    }
+                    $children_data[] = array(
+                        'name'  => $child['name'],
+                        'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id']),
+                        'id' => $category['category_id']. '_' . $child['category_id'],
+                        'children_level2' => $children_data_level2,
+                    );
+                }
+
+                // Level 1
 				$this->data['categories'][] = array(
 					'name'     => $category['name'],
 					'children' => $children_data,
 					'column'   => $category['column'] ? $category['column'] : 1,
 					'href'     => $this->url->link('product/category', 'path=' . $category['category_id'])
 				);
-			}
+
+            }
 		}
-		
+//        echo'<pre>'; var_dump($this->data['categories'][0]); die('42');
 		$this->children = array(
 			'module/language',
 			'module/currency',

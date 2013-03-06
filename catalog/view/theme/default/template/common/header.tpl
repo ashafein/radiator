@@ -123,7 +123,10 @@ DD_belatedPNG.fix('#logo img');
         <div id="menu">
           <ul>
             <?php foreach ($categories as $category) { ?>
-            <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
+            <li>
+                <a href="<?php echo $category['href']; ?>">
+                    <?php echo $category['name']; ?>
+                </a>
                 <?php if ($category['children']) { ?>
               <div>
                 <?php for ($i = 0; $i < count($category['children']);) { ?>
@@ -131,7 +134,38 @@ DD_belatedPNG.fix('#logo img');
                   <?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
                   <?php for (; $i < $j; $i++) { ?>
                   <?php if (isset($category['children'][$i])) { ?>
-                  <li><a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name']; ?></a></li>
+                    <li>
+                        <?php
+				if(count($category['children'][$i]['children_level2'])>0){
+                        ?>
+                        <a href="<?php echo $category['children'][$i]['href']; ?>" onmouseover='JavaScript:openSubMenu("<?php echo $category['children'][$i]['id']; ?>")'><?php echo $category['children'][$i]['name']; ?>
+                        <?php
+
+						echo "<img src='catalog/view/theme/default/image/arrow-right.png' style='right:10px;margin-top:3px;position:absolute;'/></a>";
+                        //echo "<span style='right:5px;margin-top:-6px;position:absolute;color:white;font-weight:bold;font-size:18px;'>&#187;</span></a>";
+
+                        }
+                        else
+                        {
+                        ?>
+                        <a href="<?php echo $category['children'][$i]['href']; ?>" onmouseover='JavaScript:closeSubMenu()' ><?php echo $category['children'][$i]['name']; ?></a>
+                        <?php
+				}
+				?>
+
+                        <?php if ($category['children'][$i]['children_level2']) { ?>
+                        <div class="submenu" id="id_menu_<?php echo $category['children'][$i]['id']; ?>">
+                            <ul>
+                                <?php for ($wi = 0; $wi < count($category['children'][$i]['children_level2']); $wi++) { ?>
+                                <li>
+                                    <a href="<?php echo $category['children'][$i]['children_level2'][$wi]['href']; ?>"  ><?php echo $category['children'][$i]['children_level2'][$wi]['name']; ?>
+                                    </a>
+                                </li>
+                                <?php } ?>
+                            </ul>
+                        </div>
+                        <?php } ?>
+                    </li>
                   <?php } ?>
                   <?php } ?>
                 </ul>
@@ -145,4 +179,51 @@ DD_belatedPNG.fix('#logo img');
         </div>
         <?php } ?>
     </div>
+    <script type="text/javascript">
+        function openSubMenu(id){
+            //
+            $('.submenu').hide();
+            document.getElementById("id_menu_"+id).style.display="block";
+        }
+        function closeSubMenu(){
+            $('.submenu').hide();
+        }
+    </script>
+    <style>
+        .submenu{
+            background: url('catalog/view/theme/default/image/menu.png') repeat scroll 0 0 transparent;
+            border: 1px solid #000000;
+            border-radius: 0px 5px 5px 0px;
+            margin-top:-36px;
+            margin-left: 11px;
+            left:140px;
+            position:absolute;
+            min-width:140px;
+            display:none;
+        }
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            .submenu {left: 139px;}
+
+        }
+    </style>
+    <!--[if IE 7]>
+    <style>
+        #menu > ul > li > div {
+            width:140px!important;
+        }
+        .submenu{
+            left:145px;
+        }
+    </style>
+    <![endif]-->
+    <!--[if IE 8]>
+    <style>
+        #menu > ul > li > div {
+            width:140px!important;
+        }
+        .submenu{
+            left:150px;
+        }
+    </style>
+    <![endif]-->
     <br>
