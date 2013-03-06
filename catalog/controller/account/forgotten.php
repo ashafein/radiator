@@ -10,7 +10,7 @@ class ControllerAccountForgotten extends Controller {
 		$this->language->load('account/forgotten');
 
 		$this->document->setTitle($this->language->get('heading_title'));
-		
+        $_REQUEST['body_class'] = 'forgot_your';
 		$this->load->model('account/customer');
 		
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {

@@ -48,6 +48,23 @@ DD_belatedPNG.fix('#logo img');
 </head>
 <body class="<?php echo isset($_REQUEST['body_class'])? $_REQUEST['body_class'] : ''; ?>" >
 <?php echo isset($_REQUEST['page_bg_style'])? $_REQUEST['page_bg_style'] : ''; ?>
+<style type="text/css">
+    #container_bg {
+        width:1000px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        background: none;
+        border: none;
+        margin-bottom:none;
+        padding-left:none;
+        padding-right:none;
+        padding-top:0;
+        border-radius:none;
+        padding-top:0;
+        margin-top:0;
+    {
+</style>
 <div class="body_bg">
     <?php if($numbers) { ?>
         <?php echo '<div class="header-contacts">';?>

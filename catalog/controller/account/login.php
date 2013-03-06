@@ -47,7 +47,7 @@ class ControllerAccountLogin extends Controller {
     	$this->language->load('account/login');
 
     	$this->document->setTitle($this->language->get('heading_title'));
-								
+        $_REQUEST['body_class'] = 'account_login';
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
 			unset($this->session->data['guest']);
 			

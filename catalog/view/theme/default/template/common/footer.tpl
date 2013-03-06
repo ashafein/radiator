@@ -1,8 +1,10 @@
+</div>
 <br>
 <br>
 <br>
 <br>
 <br>
+
     <div class="icart-footer">
       <div class="icart-footer-top">
           <div style="width:1000px; margin:0 auto;">	</div>
@@ -71,6 +73,6 @@
     OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
     Please donate via PayPal to donate@opencart.com
     //-->
-    </div>
+
 </div>
 </body></html>
