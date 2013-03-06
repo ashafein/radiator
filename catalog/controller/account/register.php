@@ -10,8 +10,9 @@ class ControllerAccountRegister extends Controller {
     	$this->language->load('account/register');
 		
 		$this->document->setTitle($this->language->get('heading_title'));
-		
-		$this->load->model('account/customer');
+        $_REQUEST['body_class'] = 'register_account';
+
+          $this->load->model('account/customer');
 		
     	if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
 			$this->model_account_customer->addCustomer($this->request->post);

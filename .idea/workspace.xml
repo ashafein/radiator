@@ -23,16 +23,7 @@
       <file leaf-file-name="stylesheet.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/stylesheet/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="19" selection-start="2276" selection-end="2276" vertical-scroll-proportion="0.6167883">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forgotten.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/controller/account/forgotten.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="152" selection-end="220" vertical-scroll-proportion="-1.6923077">
+            <state line="701" column="0" selection-start="17495" selection-end="17495" vertical-scroll-proportion="0.59615386">
               <folding />
             </state>
           </provider>
@@ -41,7 +32,7 @@
       <file leaf-file-name="forgotten.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/forgotten.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="11" selection-start="1288" selection-end="1288" vertical-scroll-proportion="-11.75">
+            <state line="45" column="0" selection-start="1461" selection-end="1598" vertical-scroll-proportion="-14.875">
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#1;n#!!top" expanded="true" />
               </folding>
@@ -52,9 +43,20 @@
       <file leaf-file-name="login.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/login.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="30" selection-start="301" selection-end="307" vertical-scroll-proportion="-2.1346154">
+            <state line="11" column="30" selection-start="301" selection-end="307" vertical-scroll-proportion="14.5">
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#2;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/register.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="206" column="18" selection-start="10217" selection-end="10217" vertical-scroll-proportion="-3.9230769">
+              <folding>
+                <element signature="n#style#0;n#tr#1;n#table#0;n#div#1;n#form#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,7 +65,16 @@
       <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/controller/account/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="1844" selection-end="1894" vertical-scroll-proportion="-3.6346154">
+            <state line="49" column="0" selection-start="1844" selection-end="1895" vertical-scroll-proportion="-3.6346154">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/controller/account/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="51" selection-start="409" selection-end="409" vertical-scroll-proportion="-3.4230769">
               <folding />
             </state>
           </provider>
@@ -79,14 +90,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/module/carousel.tpl" />
-        <option value="$PROJECT_DIR$/catalog/model/fido/numbers.php" />
         <option value="$PROJECT_DIR$/catalog/language/russian/module/numbers.php" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/stylesheet/slideshow.css" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/module/category.tpl" />
         <option value="$PROJECT_DIR$/catalog/controller/module/category.php" />
         <option value="$PROJECT_DIR$/catalog/controller/common/header.php" />
-        <option value="$PROJECT_DIR$/catalog/controller/account/login.php" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/common/header.tpl" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/common/footer.tpl" />
         <option value="$PROJECT_DIR$/catalog/controller/module/account.php" />
@@ -94,6 +102,9 @@
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/module/account.tpl" />
         <option value="$PROJECT_DIR$/catalog/controller/account/forgotten.php" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/forgotten.tpl" />
+        <option value="$PROJECT_DIR$/catalog/controller/account/login.php" />
+        <option value="$PROJECT_DIR$/catalog/controller/account/register.php" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/register.tpl" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/stylesheet/stylesheet.css" />
       </list>
     </option>
@@ -689,27 +700,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/catalog/controller/module/information.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/controller/common/column_right.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.5217391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/account.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="24" selection-start="1666" selection-end="1668" vertical-scroll-proportion="-8.057693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/information/information.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -773,16 +763,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/password.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/catalog/controller/account/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1844" selection-end="1894" vertical-scroll-proportion="-3.6346154">
+        <state line="49" column="0" selection-start="1844" selection-end="1895" vertical-scroll-proportion="-3.6346154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/controller/account/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="51" selection-start="409" selection-end="409" vertical-scroll-proportion="-3.4230769">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/login.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="30" selection-start="301" selection-end="307" vertical-scroll-proportion="-2.1346154">
+        <state line="11" column="30" selection-start="301" selection-end="307" vertical-scroll-proportion="14.5">
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#2;n#!!top" expanded="true" />
           </folding>
@@ -791,16 +795,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/forgotten.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="11" selection-start="1288" selection-end="1288" vertical-scroll-proportion="-11.75">
+        <state line="45" column="0" selection-start="1461" selection-end="1598" vertical-scroll-proportion="-14.875">
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/register.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="206" column="18" selection-start="10217" selection-end="10217" vertical-scroll-proportion="-3.9230769">
+          <folding>
+            <element signature="n#style#0;n#tr#1;n#table#0;n#div#1;n#form#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/stylesheet/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="19" selection-start="2276" selection-end="2276" vertical-scroll-proportion="0.6167883">
+        <state line="701" column="0" selection-start="17495" selection-end="17495" vertical-scroll-proportion="0.59615386">
           <folding />
         </state>
       </provider>
