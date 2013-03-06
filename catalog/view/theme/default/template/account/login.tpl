@@ -17,7 +17,7 @@
             margin-left:3px;
         }
         .linktree a {
-            color:#666;
+            color: #4C6C00;
             text-decoration:none;
             font-size:11px;
         }

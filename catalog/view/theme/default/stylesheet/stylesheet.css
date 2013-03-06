@@ -26,9 +26,14 @@ body {
     margin: 0;
     padding: 0;
 }
+
+body b {
+
+    color: #000;
+}
 .body_bg {
     background: url("../image/body_bg.png") repeat-x scroll 0 0 transparent;
-    color: #544027;
+    color: #502C20;
     font-family: Arial,Helvetica,sans-serif;
     margin: 0;
     padding: 0;
@@ -248,10 +253,10 @@ label {
     min-height: 400px;
 }
 #column-left + #column-right + #content, #column-left + #content {
-    margin-left: 195px;
+    margin-left: 193px;
 }
 #column-right + #content {
-    margin-right: 195px;
+    margin-right: 193px;
 }
 #header {
     height: 137px;
@@ -1224,8 +1229,8 @@ a.button span {
     position: absolute;
 }
 .box-category {
-    background: none repeat scroll 0 0 #ffc14a;
-    border: 1px solid #FDB749;
+    background: none repeat scroll 0 0 #E86411;
+    border: 1px solid #EFBA54;
     border-radius: 2px 2px 2px 2px;
     margin-left: 6px;
     margin-top: -11px;
@@ -1239,7 +1244,20 @@ a.button span {
     padding: 0;
 }
 .box-category > ul > li {
-    background: url("../image/box_category.png") repeat-x scroll 0 0 #FFFE3A;
+    background-image: linear-gradient(bottom, rgb(252,195,24) 8%, rgb(244,222,96) 41%);
+    background-image: -o-linear-gradient(bottom, rgb(252,195,24) 8%, rgb(244,222,96) 41%);
+    background-image: -moz-linear-gradient(bottom, rgb(252,195,24) 8%, rgb(244,222,96) 41%);
+    background-image: -webkit-linear-gradient(bottom, rgb(252,195,24) 8%, rgb(244,222,96) 41%);
+    background-image: -ms-linear-gradient(bottom, rgb(252,195,24) 8%, rgb(244,222,96) 41%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.08, rgb(252,195,24)),
+        color-stop(0.41, rgb(244,222,96))
+    );
+
     border: 1px solid #FFCC69;
     border-radius: 3px 3px 3px 3px;
     font-weight: bold;
@@ -1254,8 +1272,8 @@ a.button span {
     width: 158px;
 }
 .box-category > ul > li > a {
-    color: #544027;
-    font-size: 11px;
+    color: #293D02;
+    font-size: 12px;
     text-decoration: none;
 }
 .box-category > ul > li ul {
@@ -1265,7 +1283,7 @@ a.button span {
 }
 .box-category > ul > li a.active {
     color: #333333;
-    font-size: 11px;
+    font-size: 12px;
     padding: 3px;
 }
 .box-category > ul > li a.active + ul {
@@ -1287,7 +1305,7 @@ a.button span {
     background: none repeat scroll 0 0  #FEFABB;
 }
 .box-category > ul > li ul > li > a {
-    color: #555555;
+    color: #293D02;
     display: block;
     text-decoration: none;
 }
@@ -1296,7 +1314,7 @@ a.button span {
 }
 #content .content {
     background-color: #ffc14a;
-    border: 1px solid #fdb749;
+    border: 1px solid #E2B301;
     box-shadow: 1px 1px 1px #ffcc69 inset;
     margin-bottom: 20px;
     overflow: auto;
@@ -1348,10 +1366,10 @@ form h2 {
 }
 
 .category-info {
-    background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #FFCC69;
-    box-shadow: 1px 1px 1px #FFFFFF inset;
-    color: #444444;
+    background: none repeat scroll 0 0 #F3F0E9;
+    border: 1px solid #FF7834;
+    box-shadow: 0px 0px 2px #f89970;
+    color: #19190F;
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 20px;
@@ -1375,19 +1393,21 @@ form h2 {
     width: 18%;
 }
 .category-list ul li {
-    background-color: #F4F4F4;
-    border: 1px solid #BBBBBB;
-    border-radius: 3px 3px 3px 3px;
-    box-shadow: 1px 1px 1px #FFFFFF inset;
+    _background-color: #E0E3D8;
+    _border-bottom: 1px solid #E0E3D8;
+    _border-radius: 3px 3px 3px 3px;
+    _box-shadow: 1px 1px 1px #FFFFFF inset;
     list-style: none outside none;
     margin-bottom: 5px;
     margin-right: 5px;
     padding: 5px;
 }
 .category-list ul li a {
-    color: #555555;
+    background: url("../image/arrow-right.png") right center no-repeat;
+    color: #19190F;
     font-weight: bold;
     text-decoration: none;
+    padding-right: 10px;
 }
 .category-list .div a {
     font-weight: bold;
@@ -1424,8 +1444,8 @@ form h2 {
     text-decoration: none;
 }
 .product-filter {
-    border-bottom: 1px solid #CCCCCC;
-    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
     line-height: 30px;
     margin-bottom: 30px;
     overflow: hidden;
@@ -1464,7 +1484,7 @@ form h2 {
     margin-bottom: 25px;
 }
 .product-compare a {
-    color: #666666;
+    color: #4C6C00;
     float: left;
     font-weight: bold;
     text-decoration: none;
@@ -2663,7 +2683,7 @@ button {
     position: relative;
 }
 .btn-drop {
-    background-color: #333333;
+    background-color: #19190F;
     background-image: url("../image/bgradient2.png");
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 2px rgba(255, 255, 255, 0.1) inset;
@@ -2675,10 +2695,10 @@ button {
     position: relative;
 }
 .btn-drop:focus, .btn-drop:hover {
-    background-color: #444444;
+    background-color: #2f2f25;
 }
 .btn-drop:active {
-    background-color: #444444;
+    background-color: #2f2f25;
     border-radius: 3px 3px 0 0;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3) inset;
 }
@@ -2707,7 +2727,7 @@ button {
     text-align: left;
 }
 .btn-drop select {
-    background: none repeat scroll 0 0 #333333;
+    background: none repeat scroll 0 0 #19190F;
     color: #FFFFFF;
     cursor: pointer;
     height: 25px;
@@ -2726,7 +2746,7 @@ dl, dd, dt {
     text-decoration: none;
 }
 .catz a {
-    background-color: #222222;
+    background-color: #19190F;
     background-image: url("../image/bgradient.png");
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 2px rgba(255, 255, 255, 0.1) inset;
     color: #FFFFFF !important;
@@ -2736,21 +2756,22 @@ dl, dd, dt {
     line-height: 30px;
     position: relative;
     text-decoration: none;
+    padding-left: 5px;
 }
 .catz a:hover {
-    background-color: #333333;
+    background-color: #2f2f25;
     text-decoration: none !important;
     z-index: 2;
 }
 .catz a.active, .catz a:active {
-    background-color: #111111;
+    background-color: #29291b;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3) inset;
     position: relative;
     z-index: 2;
 }
 .catz a + a {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset, 0 2px rgba(255, 255, 255, 0.1) inset, 2px 0 0 0 rgba(255, 255, 255, 0.05) inset;
-    margin-left: -1px;
+    margin-left: -3px;
 }
 .catz a:first-child {
     border-radius: 3px 0 0 3px;
@@ -2765,7 +2786,7 @@ dl, dd, dt {
 .catz .icon {
     background-image: url("../image/icons24x24.png");
     display: inline-block;
-    height: 24px;
+    height: 19px;
     margin: 0 8px;
     position: relative;
     top: 3px;
@@ -3003,7 +3024,7 @@ button {
     margin-top: 0;
 }
 .linktree a {
-    color: #666666;
+    color: #4C6C00;
     font-size: 11px;
     text-decoration: none;
 }
@@ -3021,7 +3042,7 @@ button {
     min-height: 400px;
 }
 #column-left + #column-right + #content, #column-left + #content {
-    margin-left: 195px;
+    margin-left: 193px;
 }
 #column-right + #content {
     margin-right: 195px;
