@@ -1,6 +1,33 @@
+<style type="text/css">
+    h1, .welcome {
+        font-size:30px;
+        color:#555;
+    }
+    .box .box-heading_left {
+        background:#434343;
+        color:#CCC;
+        font-family: "Helvetica Neue",Arial,sans-serif;
+    }
+    input[type="text"], input[type="password"], textarea {
+        background:#fff;
+        border-radius:3px;
+        padding:6px;
+    }
+    #content .content {
+        background:#f1f1f1;
+    }
+    #button-cart{
+        line-height:20px;
+        height:18px;
+    }
+    a.button span {
+        color:#fff;
+        font-size:11px;
+        text-shadow:none;
+    }
+</style>
 <div class="box">
-  <div class="box-heading"><?php echo $heading_title; ?></div>
-  <div class="box-content">
+  <div class="box-content"  style="background:none;border:none;">
     <div class="box-category">
       <ul>
         <?php foreach ($categories as $category) { ?>
