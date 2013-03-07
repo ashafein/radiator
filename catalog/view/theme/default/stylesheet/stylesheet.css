@@ -986,6 +986,12 @@ a.button span {
 .tab-content ul li {
     margin-left: 10px;
 }
+
+#tab-information .review+div p strong,
+#tab-information .review+div p span{
+    font-size: 13px !important;
+}
+
 .tags a {
     background: none repeat scroll 0 0 #EEEEEE;
     border: 1px solid #CCCCCC;
@@ -3153,4 +3159,8 @@ input.add {
 
 .icart-footer-container a {
     font-size: 12px;
+}
+
+.category_product .content_bg {
+    width: 1055px;
 }

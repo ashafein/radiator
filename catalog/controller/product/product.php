@@ -132,8 +132,10 @@ class ControllerProductProduct extends Controller {
 			$this->document->addLink($this->url->link('product/product', 'product_id=' . $this->request->get['product_id']), 'canonical');
 			
 			$this->data['heading_title'] = $product_info['name'];
-			
-			$this->data['text_select'] = $this->language->get('text_select');
+            $_REQUEST['body_class'] = 'product_page';
+
+
+            $this->data['text_select'] = $this->language->get('text_select');
 			$this->data['text_manufacturer'] = $this->language->get('text_manufacturer');
 			$this->data['text_model'] = $this->language->get('text_model');
 			$this->data['text_reward'] = $this->language->get('text_reward');
