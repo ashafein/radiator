@@ -198,19 +198,25 @@ label {
     color: #078710;
 }
 .linkz ul li a.home {
-    background: url("../image/home.png") no-repeat scroll center top transparent;
+    background: url("../image/home.png") no-repeat scroll center 6px transparent;
 }
 .linkz ul li a.wishlist {
-    background: url("../image/wish_list.png") no-repeat scroll center top transparent;
+    background: url("../image/wish_list.png") no-repeat scroll center 6px transparent;
 }
 .linkz ul li a.account {
-    background: url("../image/account.png") no-repeat scroll center top transparent;
+    background: url("../image/account.png") no-repeat scroll center 6px transparent;
 }
 .linkz ul li a.cart {
-    background: url("../image/shopping_cart.png") no-repeat scroll center top transparent;
+    background: url("../image/shopping_cart.png") no-repeat scroll center 6px transparent;
 }
 .linkz ul li a.checkout {
-    background: url("../image/checkout.png") no-repeat scroll center top transparent;
+    background: url("../image/checkout.png") no-repeat scroll center 6px transparent;
+}
+.linkz ul li a.news {
+    background: url("../image/news.png") no-repeat scroll center 6px transparent;
+}
+.linkz ul li a.faqs {
+    background: url("../image/faq.png") no-repeat scroll center 6px transparent;
 }
 .linkz ul li.active a {
     color: #333333;
@@ -1237,7 +1243,7 @@ a.button span {
     position: absolute;
 }
 .box-category {
-    background: none repeat scroll 0 0 #E86411;
+    background: none repeat scroll 0 0 #ffc14a;
     border: 1px solid #EFBA54;
     border-radius: 2px 2px 2px 2px;
     margin-left: 6px;
@@ -1252,18 +1258,18 @@ a.button span {
     padding: 0;
 }
 .box-category > ul > li {
-    background-image: linear-gradient(bottom, rgb(252,195,24) 8%, rgb(244,222,96) 41%);
-    background-image: -o-linear-gradient(bottom, rgb(252,195,24) 8%, rgb(244,222,96) 41%);
-    background-image: -moz-linear-gradient(bottom, rgb(252,195,24) 8%, rgb(244,222,96) 41%);
-    background-image: -webkit-linear-gradient(bottom, rgb(252,195,24) 8%, rgb(244,222,96) 41%);
-    background-image: -ms-linear-gradient(bottom, rgb(252,195,24) 8%, rgb(244,222,96) 41%);
+    background-image: linear-gradient(bottom, rgb(255,255,65) 13%, rgb(255,255,114) 57%);
+    background-image: -o-linear-gradient(bottom, rgb(255,255,65) 13%, rgb(255,255,114) 57%);
+    background-image: -moz-linear-gradient(bottom, rgb(255,255,65) 13%, rgb(255,255,114) 57%);
+    background-image: -webkit-linear-gradient(bottom, rgb(255,255,65) 13%, rgb(255,255,114) 57%);
+    background-image: -ms-linear-gradient(bottom, rgb(255,255,65) 13%, rgb(255,255,114) 57%);
 
     background-image: -webkit-gradient(
         linear,
         left bottom,
         left top,
-        color-stop(0.08, rgb(252,195,24)),
-        color-stop(0.41, rgb(244,222,96))
+        color-stop(0.13, rgb(255,255,65)),
+        color-stop(0.57, rgb(255,255,114))
     );
 
     border: 1px solid #FFCC69;
@@ -1276,7 +1282,20 @@ a.button span {
     width: 158px;
 }
 .box-category > ul > li:hover {
-    background: none repeat scroll 0 0 #ffec6d;
+    background-image: linear-gradient(bottom, rgb(254,254,122) 13%, rgb(254,254,158) 57%);
+    background-image: -o-linear-gradient(bottom, rgb(254,254,122) 13%, rgb(254,254,158) 57%);
+    background-image: -moz-linear-gradient(bottom, rgb(254,254,122) 13%, rgb(254,254,158) 57%);
+    background-image: -webkit-linear-gradient(bottom, rgb(254,254,122) 13%, rgb(254,254,158) 57%);
+    background-image: -ms-linear-gradient(bottom, rgb(254,254,122) 13%, rgb(254,254,158) 57%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.13, rgb(254,254,122)),
+        color-stop(0.57, rgb(254,254,158))
+    );
+
     width: 158px;
 }
 .box-category > ul > li > a {
@@ -1299,7 +1318,7 @@ a.button span {
     margin-top: 10px;
 }
 .box-category > ul > li ul > li {
-    background: none repeat scroll 0 0 #FAFAA0;
+    background: none repeat scroll 0 0 #FFFDAA;
     border: 1px solid #FFCC69;
     border-radius: 3px 3px 3px 3px;
     font-weight: bold;
@@ -1310,7 +1329,7 @@ a.button span {
     width: 136px;
 }
 .box-category > ul > li ul > li:hover {
-    background: none repeat scroll 0 0  #FEFABB;
+    background: none repeat scroll 0 0  #FFF676;
 }
 .box-category > ul > li ul > li > a {
     color: #293D02;
