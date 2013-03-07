@@ -71,8 +71,9 @@
             <?php } ?>
             <?php } ?>
           </div>
-          <?php } ?>
       </div>
+          <?php } ?>
+
       <?php if ($products) { ?>
       <div class="product-filter column">
           <div class="limit">
@@ -147,51 +148,51 @@
         <?php foreach ($products as $product) { ?>
         <div class="struct">
 
-            <?php if ($product['thumb']) { ?>
+                <?php if ($product['thumb']) { ?>
 
-                     <a class="image-link" href="<?php echo $product['href']; ?>">
-                         <div class="image">
-                             <img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" />
-                         </div>
-                     </a>
+                         <a class="image-link" href="<?php echo $product['href']; ?>">
+                             <div class="image">
+                                 <img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" />
+                             </div>
+                         </a>
 
-            <?php } ?>
-          <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
-          <div class="description"><?php echo $product['description']; ?></div>
-          <?php if ($product['price']) { ?>
-          <div class="price">
-            <?php if (!$product['special']) { ?>
-            <?php echo $product['price']; ?>
-            <?php } else { ?>
-            <span class="price-old"><?php echo $product['price']; ?></span> <span class="price-new"><?php echo $product['special']; ?></span>
-            <?php } ?>
-            <?php if ($product['tax']) { ?>
-            <br />
-            <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
-            <?php } ?>
-          </div>
-          <?php } ?>
-          <?php if ($product['rating']) { ?>
-          <div class="rating"><img src="catalog/view/theme/default/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
-          <?php } ?>
+                <?php } ?>
+              <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
+              <div class="description"><?php echo $product['description']; ?></div>
+              <?php if ($product['price']) { ?>
+              <div class="price">
+                <?php if (!$product['special']) { ?>
+                <?php echo $product['price']; ?>
+                <?php } else { ?>
+                <span class="price-old"><?php echo $product['price']; ?></span> <span class="price-new"><?php echo $product['special']; ?></span>
+                <?php } ?>
+                <?php if ($product['tax']) { ?>
+                <br />
+                <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
+                <?php } ?>
+              </div>
+              <?php } ?>
+              <?php if ($product['rating']) { ?>
+              <div class="rating"><img src="catalog/view/theme/default/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
+              <?php } ?>
 
-          <div class="cart">
-              <a title="Add to Compare" onclick="addToCompare('<?php echo $product['product_id']; ?>');">
-                  <?php echo $button_compare; ?>
-                  <span class="icon icon-compare"> </span>
-              </a>
-              <a title="Add to Cart" onclick="addToCart('<?php echo $product['product_id']; ?>');">
-                  <span class="icon icon-basket"> </span>
-              </a>
-              <a title="Add to Wish List" onclick="addToWishList('<?php echo $product['product_id']; ?>');">
-                  <?php echo $button_wishlist; ?>
-                  <span class="icon icon-wish"> </span>
-              </a>
-          </div>
-
-         </div>
+              <div class="cart">
+                  <a title="Add to Compare" onclick="addToCompare('<?php echo $product['product_id']; ?>');">
+                      <?php echo $button_compare; ?>
+                      <span class="icon icon-compare"> </span>
+                  </a>
+                  <a title="Add to Cart" onclick="addToCart('<?php echo $product['product_id']; ?>');">
+                      <span class="icon icon-basket"> </span>
+                  </a>
+                  <a title="Add to Wish List" onclick="addToWishList('<?php echo $product['product_id']; ?>');">
+                      <?php echo $button_wishlist; ?>
+                      <span class="icon icon-wish"> </span>
+                  </a>
+              </div>
+        </div>
         <?php } ?>
       </div>
+
       <div class="pagination"><?php echo $pagination; ?></div>
       <?php } ?>
       <?php if (!$categories && !$products) { ?>
@@ -200,7 +201,8 @@
         <div class="right"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a></div>
       </div>
       <?php } ?>
-      <?php echo $content_bottom; ?></div>
+      <?php echo $content_bottom; ?>
+    </div>
     <script type="text/javascript">
     <!--
     function display(view) {
