@@ -29,7 +29,7 @@
   <h1 style="margin-top:10px;"><?php echo $heading_title; ?></h1>
     <br>
     <br>
-  <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+  <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="forgotten">
     <p><?php echo $text_email; ?></p>
     <h2><?php echo $text_your_email; ?></h2>
     <div class="content">

@@ -18,6 +18,7 @@
         <a href="<?php echo $image['popup']; ?>" title="<?php echo $heading_title; ?>" class="colorbox" rel="colorbox"><img src="<?php echo $image['thumb']; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a>
         <?php } ?>
       </div>
+        <br>
       <?php } ?>
     </div>
     <?php } ?>

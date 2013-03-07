@@ -1095,8 +1095,14 @@ a.button span {
     padding: 0;
     width: 180px;
 }
+
+tab-related .box-product .name {
+    width: 99%;
+    float:left;
+}
+
 .box-product .name {
-    width: 190px;
+    _width: 190px;
 }
 .box-product .name a {
     color: #544027 ;
@@ -1629,6 +1635,8 @@ form h2 {
     overflow: auto;
     width: 800px !important;
 }
+
+.box-product >div,
 .product-grid > div {
     background: none repeat scroll 0 0 #F4F4F4;
     border: 1px solid #BBBBBB;
@@ -1710,8 +1718,9 @@ form h2 {
 }
 .product-info > .left {
     float: left;
-    padding-right: 15px;
-    position: absolute;
+    padding: 0 4px 0 5px;
+    margin-right: -1px;
+    position: relative;
     background-color: #fff;
     z-index: 1;
     border-style:  solid;

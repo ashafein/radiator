@@ -62,7 +62,7 @@
             </div>
             <div class="right">
               <h2><?php echo $text_returning_customer; ?></h2>
-              <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+              <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="login">
                 <div class="content">
                   <p><?php echo $text_i_am_returning_customer; ?></p>
                   <b><?php echo $entry_email; ?></b><br />
@@ -89,9 +89,9 @@
   <?php echo $content_bottom; ?></div>
 <script type="text/javascript"><!--
 $('#login input').keydown(function(e) {
-	if (e.keyCode == 13) {
-		$('#login').submit();
-	}
+    if (e.keyCode == 13) {
+        $('#login').submit();
+    }
 });
-//--></script> 
+//--></script>
 <?php echo $footer; ?>
