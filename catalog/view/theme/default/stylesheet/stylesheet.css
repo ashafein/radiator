@@ -1068,11 +1068,10 @@ a.button span {
     overflow: hidden;
     width: 100%;
 }
-.box-product > div {
+#tab-related .box-product > div {
     display: inline-block;
-    margin: 10px 50px 0 14px;
+    margin: 10px 10px 0 14px;
     vertical-align: top;
-    width: 135px;
 }
 .box-product .image {
     display: block;
@@ -3112,7 +3111,7 @@ button {
     width: 86.2%;
 }
 #column-left + #column-right + #content .box-product > div, #column-left + #content .box-product > div {
-    margin-right: 51px;
+
 }
 #column-left + #column-right + #content .box-product .image2, #column-left + #content .box-product .image2 {
     width: 180px;

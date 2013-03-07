@@ -20,10 +20,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="stylesheet.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="stylesheet.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/stylesheet/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1074" column="0" selection-start="26550" selection-end="26567" vertical-scroll-proportion="-8.357142">
+            <state line="3113" column="0" selection-start="73335" selection-end="73335" vertical-scroll-proportion="0.35877863">
               <folding />
             </state>
           </provider>
@@ -32,16 +32,16 @@
       <file leaf-file-name="register.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/register.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="204" column="54" selection-start="10111" selection-end="10120" vertical-scroll-proportion="-1.7115384">
+            <state line="34" column="100" selection-start="1431" selection-end="1431" vertical-scroll-proportion="-2.3269231">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forgotten.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="forgotten.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/forgotten.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="98" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.6">
+            <state line="31" column="98" selection-start="1012" selection-end="1012" vertical-scroll-proportion="-5.769231">
               <folding />
             </state>
           </provider>
@@ -141,11 +141,11 @@
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/product/product.tpl" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/product/category.tpl" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default (копия)/template/product/product.tpl" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/stylesheet/stylesheet.css" />
         <option value="$PROJECT_DIR$/catalog/view/javascript/common.js" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/login.tpl" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/register.tpl" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/forgotten.tpl" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/register.tpl" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/default/stylesheet/stylesheet.css" />
       </list>
     </option>
   </component>
@@ -571,13 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/stylesheet/stylesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1074" column="0" selection-start="26550" selection-end="26567" vertical-scroll-proportion="-8.357142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catalog/view/javascript/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="138" column="1" selection-start="5469" selection-end="5469" vertical-scroll-proportion="0.9456522">
@@ -606,16 +599,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/register.tpl">
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/forgotten.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="54" selection-start="10111" selection-end="10120" vertical-scroll-proportion="-1.7115384">
+        <state line="31" column="98" selection-start="1012" selection-end="1012" vertical-scroll-proportion="-5.769231">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/forgotten.tpl">
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/register.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="98" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.6">
+        <state line="34" column="100" selection-start="1431" selection-end="1431" vertical-scroll-proportion="-2.3269231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/stylesheet/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3113" column="0" selection-start="73335" selection-end="73335" vertical-scroll-proportion="0.35877863">
           <folding />
         </state>
       </provider>
