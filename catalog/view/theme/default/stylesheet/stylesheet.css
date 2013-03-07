@@ -987,6 +987,8 @@ a.button span {
     margin-left: 10px;
 }
 
+#tab-description p strong,
+#tab-description p span,
 #tab-information .review+div p strong,
 #tab-information .review+div p span{
     font-size: 13px !important;
