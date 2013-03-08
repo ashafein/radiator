@@ -1,9 +1,8 @@
 <?php echo $header; ?>
-<?php if ($error_warning) { ?>
-<div class="warning"><?php echo $error_warning; ?></div>
-<?php } ?>
+
 
 <div id="container_bg">
+
     <style type="text/css">
         body {
             background:#E8A729 url(catalog/view/theme/SimpleCart/image/body_listing.png) repeat-x;
@@ -28,6 +27,9 @@
     </div>
   <h1 style="margin-top:10px;"><?php echo $heading_title; ?></h1>
     <br>
+    <?php if ($error_warning) { ?>
+    <div class="warning"><?php echo $error_warning; ?></div>
+    <?php } ?>
     <br>
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="forgotten">
     <p><?php echo $text_email; ?></p>

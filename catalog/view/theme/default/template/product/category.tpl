@@ -185,7 +185,7 @@
                       <span class="icon icon-basket"> </span>
                   </a>
                   <a title="Add to Wish List" onclick="addToWishList('<?php echo $product['product_id']; ?>');">
-                      <?php echo $button_wishlist; ?>
+                      <?php // echo  $button_wishlist; ?>
                       <span class="icon icon-wish"> </span>
                   </a>
               </div>

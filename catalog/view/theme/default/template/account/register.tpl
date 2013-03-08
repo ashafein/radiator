@@ -1,8 +1,7 @@
 <?php echo $header; ?>
-<?php if ($error_warning) { ?>
-<div class="warning"><?php echo $error_warning; ?></div>
-<?php } ?>
+
 <div id="container_bg">
+
     <style type="text/css">
         input[type="text"], input[type="password"], textarea {
             border-right: solid 1px #C6C6C6;
@@ -32,6 +31,11 @@
       </div>
       <h1><?php echo $heading_title; ?></h1>
       <p><?php echo $text_account_already; ?></p>
+
+        <?php if ($error_warning) { ?>
+        <div class="warning"><?php echo $error_warning; ?></div>
+        <?php } ?>
+
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="register">
         <h2><?php echo $text_your_details; ?></h2>
         <div class="content">

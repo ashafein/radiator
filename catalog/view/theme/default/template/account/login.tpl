@@ -1,10 +1,4 @@
 <?php echo $header; ?>
-<?php if ($success) { ?>
-<div class="success"><?php echo $success; ?></div>
-<?php } ?>
-<?php if ($error_warning) { ?>
-<div class="warning"><?php echo $error_warning; ?></div>
-<?php } ?>
 
 <div id="container_bg">
     <style type="text/css">
@@ -49,7 +43,14 @@
       </div>
       <h1 style="margin-top:10px;"><?php echo $heading_title; ?></h1>
         <br>
+    <?php if ($success) { ?>
+         <div class="success"><?php echo $success; ?></div>
+    <?php } ?>
+    <?php if ($error_warning) { ?>
+        <div class="warning"><?php echo $error_warning; ?></div>
+    <?php } ?>
         <br>
+
       <?php echo $column_left; ?><?php echo $column_right; ?>
       <div id="content">
           <div class="login-content">
