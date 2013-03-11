@@ -4,7 +4,7 @@
       <div class="box-category">
         <ul>
           <?php if (!$logged) { ?>
-          <li><a href="<?php echo $login; ?>"><?php echo $text_login; ?></a> / <a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
+          <li><a href="<?php echo $login; ?>"><?php echo $text_login; ?></a>  <a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
           <li><a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a></li>
           <?php } ?>
           <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
