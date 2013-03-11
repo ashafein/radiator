@@ -19,7 +19,7 @@
 <br />
 <?php } ?>
 <b><?php echo $text_comments; ?></b>
-<textarea name="comment" rows="8" style="width: 98%;"><?php echo $comment; ?></textarea>
+<textarea name="comment" rows="8" style="width: 98%; margin-top: 5px"><?php echo $comment; ?></textarea>
 <br />
 <br />
 <?php if ($text_agree) { ?>
@@ -36,7 +36,9 @@
 <?php } else { ?>
 <div class="buttons">
   <div class="right">
-    <input type="button" value="<?php echo $button_continue; ?>" id="button-payment-method" class="button" />
+      <a class="button" id="button-payment-method">
+          <span><?php echo $button_continue; ?> </span>
+      </a>
   </div>
 </div>
 <?php } ?>

@@ -70,7 +70,9 @@
 <br />
 <div class="buttons">
   <div class="right">
-    <input type="button" value="<?php echo $button_continue; ?>" id="button-shipping-address" class="button" />
+      <a class="button" id="button-shipping-address">
+          <span><?php echo $button_continue; ?> </span>
+      </a>
   </div>
 </div>
 <script type="text/javascript"><!--

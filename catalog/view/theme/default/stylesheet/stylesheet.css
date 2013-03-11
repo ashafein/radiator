@@ -2305,14 +2305,29 @@ form h2 {
     text-align: right;
 }
 .checkout-heading {
-    background-color: #F4F4F4;
-    border: 1px solid #BBBBBB;
-    box-shadow: 1px 1px 1px #FFFFFF inset;
-    color: #555555;
+    background-image: linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+    background-image: -o-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+    background-image: -moz-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+    background-image: -webkit-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+    background-image: -ms-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(247,197,80)),
+        color-stop(0, rgb(253,231,88)),
+        color-stop(0.82, rgb(254,254,104))
+    );
     font-size: 13px;
-    font-weight: bold;
     margin-bottom: 15px;
-    padding: 8px;
+    padding: 10px;
+    border: 1px solid #fdfe96;
+    box-shadow: 1px 1px 1px rgb(247,197,80) inset;
+    color: #444444;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 1px rgb(247,197,80);
 }
 .checkout-heading a {
     float: right;
@@ -2333,7 +2348,7 @@ form h2 {
     padding: 6px;
     width: 48%;
 }
-.checkout-content .right {
+.qcheckout-content .right {
     background-color: #F4F4F4;
     border: 1px solid #BBBBBB;
     box-shadow: 1px 1px 1px #FFFFFF inset;
