@@ -1,4 +1,52 @@
 <?php echo $header; ?>
+
+<div id="container_bg">
+
+<style type="text/css">
+    #container_bg {
+        width: 1000px;
+    }
+
+    body {
+        background:#E8A729 url(catalog/view/theme/default/image/body_listing.png) repeat-x;
+    }
+    .linktree {
+        margin-top:0px;
+        margin-bottom:10px;
+        margin-left:3px;
+    }
+    .linktree a {
+        text-decoration:none;
+        font-size:11px;
+    }
+    a.button{
+        margin-right: 24px;
+    }
+
+    #column-right + #content {
+        margin-right: 0;
+    }
+
+    #content form {
+        width: 100%;
+    }
+    #content .content {
+        margin-right: 0;
+    }
+</style>
+<div class="linktree">
+    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+    <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+    <?php } ?>
+</div>
+
+<h1><?php echo $heading_title; ?>
+    <?php if ($weight) { ?>
+    &nbsp;(<?php echo $weight; ?>)
+    <?php } ?>
+</h1><?php echo $column_left; ?><?php echo $column_right; ?>
+
+<div id="content">
 <?php if ($attention) { ?>
 <div class="attention"><?php echo $attention; ?><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>
 <?php } ?>
@@ -8,18 +56,7 @@
 <?php if ($error_warning) { ?>
 <div class="warning"><?php echo $error_warning; ?><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>
 <?php } ?>
-<?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content"><?php echo $content_top; ?>
-  <div class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
-    <?php } ?>
-  </div>
-  <h1><?php echo $heading_title; ?>
-    <?php if ($weight) { ?>
-    &nbsp;(<?php echo $weight; ?>)
-    <?php } ?>
-  </h1>
+
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
     <div class="cart-info">
       <table>
@@ -54,8 +91,8 @@
             <td class="model"><?php echo $product['model']; ?></td>
             <td class="quantity"><input type="text" name="quantity[<?php echo $product['key']; ?>]" value="<?php echo $product['quantity']; ?>" size="1" />
               &nbsp;
-              <input type="image" src="catalog/view/theme/default/image/update.png" alt="<?php echo $button_update; ?>" title="<?php echo $button_update; ?>" />
-              &nbsp;<a href="<?php echo $product['remove']; ?>"><img src="catalog/view/theme/default/image/remove.png" alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" /></a></td>
+              <input type="image" src="catalog/view/theme/default/image/restart.png" alt="<?php echo $button_update; ?>" title="<?php echo $button_update; ?>" />
+              &nbsp;<a href="<?php echo $product['remove']; ?>"><img src="catalog/view/theme/default/image/remove_2.png" alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" /></a></td>
             <td class="price"><?php echo $product['price']; ?></td>
             <td class="total"><?php echo $product['total']; ?></td>
           </tr>
@@ -124,30 +161,36 @@
   </div>
   <div class="cart-module">
     <div id="coupon" class="content" style="display: <?php echo ($next == 'coupon' ? 'block' : 'none'); ?>;">
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="coupon-form">
         <?php echo $entry_coupon; ?>&nbsp;
         <input type="text" name="coupon" value="<?php echo $coupon; ?>" />
         <input type="hidden" name="next" value="coupon" />
         &nbsp;
-        <input type="submit" value="<?php echo $button_coupon; ?>" class="button" />
+          <a  class="button" onclick="$('#coupon-form').submit();">
+              <span> <?php echo $button_coupon; ?> </span>
+          </a>
       </form>
     </div>
     <div id="voucher" class="content" style="display: <?php echo ($next == 'voucher' ? 'block' : 'none'); ?>;">
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="voucher-form">
         <?php echo $entry_voucher; ?>&nbsp;
         <input type="text" name="voucher" value="<?php echo $voucher; ?>" />
         <input type="hidden" name="next" value="voucher" />
         &nbsp;
-        <input type="submit" value="<?php echo $button_voucher; ?>" class="button" />
+          <a  class="button" onclick="$('#voucher-form').submit();">
+              <span> <?php echo $button_voucher; ?> </span>
+          </a>
       </form>
     </div>
     <div id="reward" class="content" style="display: <?php echo ($next == 'reward' ? 'block' : 'none'); ?>;">
-      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
+      <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="reward-form">
         <?php echo $entry_reward; ?>&nbsp;
         <input type="text" name="reward" value="<?php echo $reward; ?>" />
         <input type="hidden" name="next" value="reward" />
         &nbsp;
-        <input type="submit" value="<?php echo $button_reward; ?>" class="button" />
+          <a  class="button" onclick="$('#reward-form').submit();">
+              <span> <?php echo $button_reward; ?> </span>
+          </a>
       </form>
     </div>
     <div id="shipping" class="content" style="display: <?php echo ($next == 'shipping' ? 'block' : 'none'); ?>;">
@@ -176,7 +219,9 @@
           <td><input type="text" name="postcode" value="<?php echo $postcode; ?>" /></td>
         </tr>
       </table>
-      <input type="button" value="<?php echo $button_quote; ?>" id="button-quote" class="button" />
+        <a  class="button"  id="button-quote" >
+            <span> <?php echo $button_quote; ?> </span>
+        </a>
     </div>
   </div>
   <?php } ?>
@@ -194,6 +239,8 @@
     <div class="right"><a href="<?php echo $checkout; ?>" class="button"><?php echo $button_checkout; ?></a></div>
     <div class="center"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_shopping; ?></a></div>
   </div>
+    <br>
+    <br>
   <?php echo $content_bottom; ?></div>
 <script type="text/javascript"><!--
 $('input[name=\'next\']').bind('change', function() {

@@ -36,4 +36,5 @@ $_['entry_country']          = 'Страна:';
 $_['entry_zone']             = 'Регион / Штат:';
 $_['entry_postcode']         = 'Почтовый индекс:';
 $_['text_points']            = 'Получите %s поинтов';
+$_['text_shipping_method']    = 'Доставка';
 ?>

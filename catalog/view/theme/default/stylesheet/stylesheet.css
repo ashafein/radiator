@@ -2003,6 +2003,8 @@ form h2 {
 .compare-info .price-new {
     font-weight: bold;
 }
+
+.cart-info table,
 .wishlist-product table {
     background-color: #fff;
     border: 1px solid #fefefe;
@@ -2031,7 +2033,7 @@ form h2 {
     text-align: right;
 }
 .wishlist-product tbody td {
-    border-bottom: 1px solid #DDDDDD;
+    border-bottom: 1px solid #eee;
     vertical-align: middle;
 }
 .wishlist-product tbody .remove {
@@ -2216,12 +2218,14 @@ form h2 {
     border-collapse: collapse;
     margin-bottom: 20px;
     width: 100%;
+    background-color: #fff;
+    color: #000;
 }
 .cart-info td {
-    background-color: #F4F4F4;
-    border: 1px solid #BBBBBB;
-    box-shadow: 1px 1px 1px #FFFFFF inset;
+    background-color: #fff;
     padding: 7px;
+    border-bottom: 1px solid #ccc;
+
 }
 .cart-info td a {
     color: #444444;
@@ -2232,10 +2236,10 @@ form h2 {
     text-shadow: 0 1px #FFFFFF;
 }
 .cart-info thead td {
-    background-color: #F4F4F4;
-    border: 1px solid #BBBBBB;
-    box-shadow: 1px 1px 1px #FFFFFF inset;
-    color: #4D4D4D;
+    background-color: #F9F9F9;
+    border: 0 0 1px 0 solid #ddd;
+    box-shadow-bottom: 1px #FFFFFF inset;
+    color: #666666;
     font-weight: bold;
 }
 .cart-info thead .remove, .cart-info thead .image {
@@ -2248,8 +2252,8 @@ form h2 {
     text-align: right;
 }
 .cart-info tbody td {
-    border-bottom: 1px solid #DDDDDD;
-    vertical-align: top;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
 }
 .cart-info tbody .remove {
     vertical-align: middle;
@@ -2287,10 +2291,11 @@ form h2 {
     padding: 0 0 15px;
 }
 .cart-total {
-    border-top: 1px solid #DDDDDD;
+    border-top: 1px solid #FECD60;
     margin-bottom: 15px;
     overflow: auto;
     padding-top: 8px;
+    color: #000;
 }
 .cart-total table {
     float: right;
@@ -2527,8 +2532,8 @@ div#sale {
     z-index: 100;
 }
 input[type="text"], input[type="password"], textarea {
-    background-color: #EEEEEE;
-    border: 1px solid #BBBBBB;
+    background-color: #fff;
+    border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #FFFFFF inset;
     margin-bottom: 5px;
     padding: 8px;
