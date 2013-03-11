@@ -911,22 +911,49 @@ a.button span {
     line-height: 6px;
     text-shadow: 0 1px #111111;
 }
+#button-confirm:hover {
+    background-image: linear-gradient(bottom, rgb(52,96,143) 19%, rgb(74,133,191) 60%);
+    background-image: -o-linear-gradient(bottom, rgb(52,96,143) 19%, rgb(74,133,191) 60%);
+    background-image: -moz-linear-gradient(bottom, rgb(52,96,143) 19%, rgb(74,133,191) 60%);
+    background-image: -webkit-linear-gradient(bottom, rgb(52,96,143) 19%, rgb(74,133,191) 60%);
+    background-image: -ms-linear-gradient(bottom, rgb(52,96,143) 19%, rgb(74,133,191) 60%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.19, rgb(52,96,143)),
+        color-stop(0.6, rgb(74,133,191))
+    );
+}
+
 #button-confirm {
-    background: -moz-linear-gradient(center top , #3D94F6 5%, #1E62D0 100%) repeat scroll 0 0 #3D94F6;
-    border: 1px solid #337FED;
+    background-image: linear-gradient(bottom, rgb(30,98,208) 13%, rgb(61,147,246) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(30,98,208) 13%, rgb(61,147,246) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(30,98,208) 13%, rgb(61,147,246) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(30,98,208) 13%, rgb(61,147,246) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(30,98,208) 13%, rgb(61,147,246) 100%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.13, rgb(30,98,208)),
+        color-stop(1, rgb(61,147,246))
+    );    border: 1px solid #337FED;
     border-radius: 3px 3px 3px 3px;
     box-shadow: 0 1px 0 0 #97C4FE inset;
     color: #FFFFFF !important;
     display: inline-block;
     font-family: arial;
     font-weight: bold;
-    height: 20px;
+
     margin-right: 0;
-    padding: 4px;
+    padding: 7px;
     text-align: center;
     text-decoration: none;
     text-shadow: 1px 1px 0 #1570CD;
-    width: 120px;
+
 }
 .buttons {
     margin-bottom: 20px;
@@ -2366,21 +2393,20 @@ form h2 {
 }
 .checkout-product table {
     border-collapse: collapse;
-    border-left: 1px solid #DDDDDD;
-    border-right: 1px solid #DDDDDD;
-    border-top: 1px solid #DDDDDD;
+    border: 1px solid #EFBA54;
     margin-bottom: 20px;
     width: 100%;
+    color: #000000;
 }
 .checkout-product td {
     background-color: #F4F4F4;
-    border: 1px solid #BBBBBB;
+    border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #FFFFFF inset;
     padding: 8px;
 }
 .checkout-product thead td {
-    background-color: #F4F4F4;
-    border: 1px solid #BBBBBB;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #FFFFFF inset;
     color: #4D4D4D;
     font-weight: bold;
@@ -2393,7 +2419,7 @@ form h2 {
     text-align: right;
 }
 .checkout-product tbody td {
-    border-bottom: 1px solid #DDDDDD;
+    border-bottom: 1px solid #eee;
     vertical-align: top;
 }
 .checkout-product tbody .name, .checkout-product tbody .model {
@@ -2403,12 +2429,17 @@ form h2 {
     text-align: right;
 }
 .checkout-product tfoot td {
-    background-color: #F4F4F4;
-    border: 1px solid #BBBBBB;
+    background-color: #fff;
+    border: 1px solid #eee;
     box-shadow: 1px 1px 1px #FFFFFF inset;
     padding: 8px;
     text-align: right;
 }
+.payment .buttons {
+    padding: 0;
+    overflow: visible;
+}
+
 .contact-info {
     overflow: auto;
 }
