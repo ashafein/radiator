@@ -103,7 +103,7 @@
                 <td class="name"><?php echo $vouchers['description']; ?></td>
                 <td class="model"></td>
                 <td class="quantity"><input type="text" name="" value="1" size="1" disabled="disabled" />
-                  &nbsp;<a href="<?php echo $vouchers['remove']; ?>"><img src="catalog/view/theme/default/image/remove.png" alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" /></a></td>
+                  &nbsp;<a href="<?php echo $vouchers['remove']; ?>"><img src="catalog/view/theme/default/image/remove_2.png" alt="<?php echo $button_remove; ?>" title="<?php echo $button_remove; ?>" /></a></td>
                 <td class="price"><?php echo $vouchers['amount']; ?></td>
                 <td class="total"><?php echo $vouchers['amount']; ?></td>
               </tr>

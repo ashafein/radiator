@@ -33,10 +33,12 @@
     <?php echo $column_left; ?><?php echo $column_right; ?>
     <div id="content">
         <?php echo $text_error; ?>
+        <div class="buttons">
+            <div class="center"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a></div>
+        </div>
     </div>
-  <div class="buttons">
-    <div class="right"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a></div>
-  </div>
+
   <?php echo $content_bottom; ?>
 </div>
+
 <?php echo $footer; ?>

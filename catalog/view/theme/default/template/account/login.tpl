@@ -43,16 +43,17 @@
       </div>
       <h1 style="margin-top:10px;"><?php echo $heading_title; ?></h1>
         <br>
-    <?php if ($success) { ?>
-         <div class="success"><?php echo $success; ?></div>
-    <?php } ?>
-    <?php if ($error_warning) { ?>
-        <div class="warning"><?php echo $error_warning; ?></div>
-    <?php } ?>
-        <br>
+
 
       <?php echo $column_left; ?><?php echo $column_right; ?>
       <div id="content">
+          <?php if ($success) { ?>
+          <div class="success"><?php echo $success; ?></div>
+          <?php } ?>
+          <?php if ($error_warning) { ?>
+          <div class="warning"><?php echo $error_warning; ?></div>
+          <?php } ?>
+          <br>
           <div class="login-content">
             <div class="left">
               <h2><?php echo $text_new_customer; ?></h2>

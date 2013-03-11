@@ -1,8 +1,10 @@
 <div class="box">
-  <div class="box-heading"><?php echo $heading_title; ?></div>
+
   <div class="box-content">
     <div class="box-category">
-      <ul>
+        <div class="box-heading-faq"><?php echo $heading_title; ?></div>
+
+        <ul>
         <?php foreach ($faqs as $faq) { ?>
         <li>
           <?php if ($faq['faq_id'] == $topic_id) { ?>

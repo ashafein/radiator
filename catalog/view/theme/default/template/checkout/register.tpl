@@ -114,13 +114,18 @@
 <div class="buttons">
   <div class="right"><?php echo $text_agree; ?>
     <input type="checkbox" name="agree" value="1" />
-    <input type="button" value="<?php echo $button_continue; ?>" id="button-register" class="button" />
-  </div>
+      <div class="right">
+          <a class="button" id="button-register">
+              <span><?php echo $button_continue; ?> </span>
+          </a>
+      </div>  </div>
 </div>
 <?php } else { ?>
 <div class="buttons">
   <div class="right">
-    <input type="button" value="<?php echo $button_continue; ?>" id="button-register" class="button" />
+      <a class="button" id="button-register">
+          <span><?php echo $button_continue; ?> </span>
+      </a>
   </div>
 </div>
 <?php } ?>

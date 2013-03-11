@@ -1,18 +1,50 @@
 <?php echo $header; ?>
-<?php if ($error_warning) { ?>
-<div class="warning"><?php echo $error_warning; ?></div>
-<?php } ?>
-<?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content"><?php echo $content_top; ?>
-  <div class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+
+<div id="container_bg">
+
+    <style type="text/css">
+        #container_bg {
+            width: 1000px;
+        }
+
+        body {
+            background:#E8A729 url(catalog/view/theme/default/image/body_listing.png) repeat-x;
+        }
+        .linktree {
+            margin-top:0px;
+            margin-bottom:10px;
+            margin-left:3px;
+        }
+        .linktree a {
+            text-decoration:none;
+            font-size:11px;
+        }
+        a.button{
+            margin-right: 24px;
+        }
+        #content .content{
+
+        }
+
+
+    </style>
+    <div class="linktree">
+        <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+        <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+        <?php } ?>
+    </div>
+
+    <h1><?php echo $heading_title; ?></h1>
+    <?php echo $column_left; ?><?php echo $column_right; ?>
+
+    <div id="content">
+    <?php if ($error_warning) { ?>
+    <div class="warning"><?php echo $error_warning; ?></div>
     <?php } ?>
-  </div>
-  <h1><?php echo $heading_title; ?></h1>
+
   <p><?php echo $text_description; ?></p>
-  <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-    <table class="form">
+  <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="voucher">
+    <table class="form voucher">
       <tr>
         <td><span class="required">*</span> <?php echo $entry_to_name; ?></td>
         <td><input type="text" name="to_name" value="<?php echo $to_name; ?>" />
@@ -76,9 +108,15 @@
         <?php } else { ?>
         <input type="checkbox" name="agree" value="1" />
         <?php } ?>
-        <input type="submit" value="<?php echo $button_continue; ?>" class="button" />
+          <a class="button" onclick="$('#voucher').submit();">
+              <span><?php echo $button_continue; ?> </span>
+          </a>
       </div>
     </div>
   </form>
-  <?php echo $content_bottom; ?></div>
+  <?php echo $content_bottom; ?>
+  </div>
+</div>
+<br />
+<br />
 <?php echo $footer; ?>

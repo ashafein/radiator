@@ -753,11 +753,14 @@ label {
     display: block;
 }
 .help {
-    color: #999999;
+    color: #f4f4f4;
     display: block;
     font-family: Verdana,Geneva,sans-serif;
     font-size: 10px;
     font-weight: normal;
+}
+.form.voucher  td {
+    vertical-align: top;
 }
 table.form {
     border-collapse: collapse;
@@ -2123,6 +2126,10 @@ form h2 {
     padding: 10px 0;
     width: 100%;
 }
+.order-list .order-content b{
+    font-weight: bold;
+    color: #666;
+}
 .order-list .order-content div {
     float: left;
     width: 33.3%;
@@ -2372,22 +2379,32 @@ form h2 {
     padding: 0 0 15px;
 }
 .checkout-content .left {
-    background-color: #F4F4F4;
-    border: 1px solid #BBBBBB;
-    box-shadow: 1px 1px 1px #FFFFFF inset;
+    background-color: #FFC14A;
+    border: 1px solid #E2B301;
+    box-shadow: 1px 1px 1px #FFCC69 inset;
     float: left;
     padding: 6px;
-    width: 48%;
+    width: 46%;
 }
-.qcheckout-content .right {
-    background-color: #F4F4F4;
-    border: 1px solid #BBBBBB;
-    box-shadow: 1px 1px 1px #FFFFFF inset;
+.checkout-content .right,
+.checkout-content .left+.right {
+    padding-left: 10px;
+}
+.checkout-content .right br,
+.checkout-content .left br {
+    display: block;
+    margin-bottom: 5px;
+}
+.checkout-content .left+.right {
+    background-color: #FFC14A;
+    border: 1px solid #E2B301;
+    box-shadow: 1px 1px 1px #FFCC69 inset;
     float: right;
     font-weight: bold;
     line-height: 10px;
     padding: 6px;
-    width: 48%;
+    width: 46%;
+
 }
 .checkout-content .right a {
     color: #444444;
@@ -3380,4 +3397,64 @@ input.add {
 
 #content form .content {
     margin-right: 0;
+}
+.box-heading-faq {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #FFC14A;
+}
+.faq-list, .faq-list a {
+    font-size: 14px;
+}
+
+.faq-list a {
+    background-image: linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+    background-image: -o-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+    background-image: -moz-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+    background-image: -webkit-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+    background-image: -ms-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(247,197,80)),
+        color-stop(0, rgb(253,231,88)),
+        color-stop(0.82, rgb(254,254,104))
+    );
+    display: block;
+    padding: 10px;
+    border: 1px solid #fdfe96;
+    box-shadow: 1px 1px 1px rgb(247,197,80) inset;
+    color: #444444;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 1px rgb(247,197,80);
+
+}
+
+.faq-list a:hover {
+    background-image: linear-gradient(bottom, rgb(247,197,80) 0%, rgb(250,233,120) 0%, rgb(255,255,158) 82%);
+    background-image: -o-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(250,233,120) 0%, rgb(255,255,158) 82%);
+    background-image: -moz-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(250,233,120) 0%, rgb(255,255,158) 82%);
+    background-image: -webkit-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(250,233,120) 0%, rgb(255,255,158) 82%);
+    background-image: -ms-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(250,233,120) 0%, rgb(255,255,158) 82%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(247,197,80)),
+        color-stop(0, rgb(250,233,120)),
+        color-stop(0.82, rgb(255,255,158))
+    );
+    color: #4C6C00;
+}
+.faq-text p {
+    font-size: 14px;
+    color: #000;
+}
+
+#content .content.faq-text {
 }

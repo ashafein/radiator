@@ -24,14 +24,15 @@
         <?php } ?>
     </div>
     <h1 style="margin-top:10px;"><?php echo $heading_title; ?></h1>
-    <?php echo $content_top; ?>
 
-    <br>
-    <?php if ($error_warning) { ?>
-    <div class="warning"><?php echo $error_warning; ?></div>
-    <?php } ?>
-    <br>
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="forgotten">
+      <?php echo $content_top; ?>
+
+      <br>
+      <?php if ($error_warning) { ?>
+      <div class="warning"><?php echo $error_warning; ?></div>
+      <?php } ?>
+      <br>
     <p><?php echo $text_email; ?></p>
     <h2><?php echo $text_your_email; ?></h2>
     <div class="content">
