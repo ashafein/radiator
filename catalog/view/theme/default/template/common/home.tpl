@@ -1,4 +1,5 @@
-<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
+<?php echo $header; ?>
+<?php echo $column_left; ?><?php echo $column_right; ?>
 <div id="container_bg">
     <div id="content">
         <?php echo $content_top; ?>

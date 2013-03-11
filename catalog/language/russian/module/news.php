@@ -1,6 +1,6 @@
 ﻿<?php
 // Heading 
-$_['heading_title']   = 'Новости / Блог';
+$_['heading_title']   = 'Новости / Статьи';
 
 // Text
 $_['text_read_more']  = 'читать далее';

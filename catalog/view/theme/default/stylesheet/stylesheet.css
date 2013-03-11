@@ -720,6 +720,7 @@ label {
     color: #555555;
     margin-bottom: 15px;
     padding: 10px 10px 10px 33px;
+    w idth: 93%;
 }
 .success {
     background: url("../image/success.png") no-repeat scroll 10px center #EAF7D9;
@@ -1392,7 +1393,7 @@ a.button span {
     padding: 10px;
 }
 #content  form {
-    width:  80%;;
+
     display: block;
 }
 
@@ -2094,16 +2095,19 @@ form h2 {
     min-height: 190px;
 }
 .order-list {
-    background-color: #E0E0E0;
+    background-color: #F9f9f9;
     border: 1px solid #BBBBBB;
     box-shadow: 1px 1px 1px #FFFFFF inset;
     margin-bottom: 10px;
     padding: 10px;
+    font-size: 12px;
 }
 .order-list .order-id {
     float: left;
     margin-bottom: 2px;
     width: 49%;
+    font-weight: bold;
+
 }
 .order-list .order-status {
     float: right;
@@ -3359,4 +3363,21 @@ input.add {
 
 #tab-related .box-product .priced ul li a {
     width: 154px;
+}
+
+.client-address-list {
+    font-size: 14px;
+}
+.client-address-list br{
+    display: block;
+    margin: 5px;
+}
+
+#column-right + #content {
+    margin-right: 0;
+    width: 80%;
+}
+
+#content form .content {
+    margin-right: 0;
 }

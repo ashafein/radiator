@@ -26,17 +26,17 @@
             width:80%;
         }
     </style>
+    <div class="linktree">
+        <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+        <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+        <?php } ?>
+    </div>
 
+    <h1><?php echo $heading_title; ?></h1>
+    <br>
+    <?php echo $column_left; ?><?php echo $column_right; ?>
     <div id="content"><?php echo $content_top; ?>
-        <div class="linktree">
-            <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-            <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
-            <?php } ?>
-        </div>
 
-      <h1><?php echo $heading_title; ?></h1>
-        <br>
-        <?php echo $column_left; ?><?php echo $column_right; ?>
 
         <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="edit">
         <h2><?php echo $text_password; ?></h2>

@@ -29,8 +29,9 @@
         <?php } ?>
     </div>
     <h1 style="margin-top:10px;"><?php echo $heading_title; ?></h1>
-    <br>
+    <br />
     <div id="notification"></div>
+    <br />
     <?php echo $column_left; ?><?php echo $column_right; ?>
 
     <div id="content">

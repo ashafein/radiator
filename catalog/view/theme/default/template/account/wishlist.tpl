@@ -23,11 +23,10 @@
             margin-right: 24px;
         }
         #content .content{
-            width:77%;
+
         }
-        #column-right + #content {
-            margin-right: 0;
-        }
+
+
     </style>
     <div class="linktree">
         <?php foreach ($breadcrumbs as $breadcrumb) { ?>

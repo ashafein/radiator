@@ -43,13 +43,12 @@
         </div>
         <h1 style="margin-top:10px;"><?php echo $heading_title; ?></h1>
         <br>
-    <?php if ($success) { ?>
-    <div class="success"><?php echo $success; ?></div>
-    <?php } ?>
 
     <?php echo $column_left; ?><?php echo $column_right; ?>
     <div id="content"><?php echo $content_top; ?>
-
+        <?php if ($success) { ?>
+        <div class="success"><?php echo $success; ?></div>
+        <?php } ?>
       <h2><?php echo $text_my_account; ?></h2>
       <div class="content">
         <ul>

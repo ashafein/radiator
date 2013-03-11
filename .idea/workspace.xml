@@ -20,19 +20,73 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="stylesheet.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="stylesheet.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/stylesheet/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="926" column="6" selection-start="23481" selection-end="23481" vertical-scroll-proportion="0.70229006">
+            <state line="3381" column="19" selection-start="80959" selection-end="80959" vertical-scroll-proportion="-17.107143">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order_list.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/order_list.tpl">
+      <file leaf-file-name="wishlist.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/wishlist.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="5" selection-start="685" selection-end="685" vertical-scroll-proportion="-19.375">
+            <state line="27" column="0" selection-start="571" selection-end="571" vertical-scroll-proportion="-16.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cart.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/module/cart.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="32" selection-start="817" selection-end="817" vertical-scroll-proportion="-10.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/common/home.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="30" selection-start="228" selection-end="228" vertical-scroll-proportion="-3.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkout.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/controller/checkout/checkout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="74" selection-start="1727" selection-end="1727" vertical-scroll-proportion="-11.375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cart.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/controller/checkout/cart.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="397" column="0" selection-start="15478" selection-end="15478" vertical-scroll-proportion="-2.4038463">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="not_found.tpl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/error/not_found.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="473" selection-end="473" vertical-scroll-proportion="0.26136363">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="password.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/password.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="1013" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -41,33 +95,11 @@
       <file leaf-file-name="cart.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/checkout/cart.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="237" column="25" selection-start="11122" selection-end="11129" vertical-scroll-proportion="-1.9625">
+            <state line="37" column="35" selection-start="798" selection-end="810" vertical-scroll-proportion="-4.8846154">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#4;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#4;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#4;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <marker date="1363014731330" expanded="true" signature="12560:12574" placeholder="..." />
-                <marker date="1363014731330" expanded="true" signature="14582:14600" placeholder="..." />
+                <marker date="1363014731330" expanded="false" signature="12560:12574" placeholder="..." />
+                <marker date="1363014731330" expanded="false" signature="14582:14600" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forgotten.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/forgotten.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="1493" selection-end="1630" vertical-scroll-proportion="-5.0384617">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="confirm.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/checkout/confirm.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -77,44 +109,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkout.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/checkout/checkout.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="0" selection-start="1234" selection-end="1234" vertical-scroll-proportion="-5.480769">
-              <folding>
-                <marker date="1363024347439" expanded="true" signature="5950:5964" placeholder="..." />
-                <marker date="1363024347439" expanded="true" signature="7226:7240" placeholder="..." />
-                <marker date="1363024347439" expanded="true" signature="14683:14697" placeholder="..." />
-                <marker date="1363024347439" expanded="true" signature="19735:19749" placeholder="..." />
-                <marker date="1363024347439" expanded="true" signature="23638:23652" placeholder="..." />
-                <marker date="1363024347439" expanded="true" signature="29923:29937" placeholder="..." />
-                <marker date="1363024347439" expanded="true" signature="33112:33126" placeholder="..." />
-                <marker date="1363024347439" expanded="true" signature="35071:35085" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product.tpl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/product/product.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="349" column="43" selection-start="21458" selection-end="21465" vertical-scroll-proportion="-3.1730769">
-              <folding>
-                <element signature="n#style#0;n#h1#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#3;n#div#3;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#div#2;n#div#4;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#1;n#div#2;n#div#4;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#textarea#0;n#div#3;n#div#1;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#3;n#div#1;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <marker date="1363003855466" expanded="false" signature="26245:26259" placeholder="..." />
-                <marker date="1363003855466" expanded="false" signature="27307:27325" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -129,22 +123,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/edit.tpl" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/password.tpl" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/product/product.tpl" />
+        <option value="$PROJECT_DIR$/catalog/controller/account/address.php" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/wishlist.tpl" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/order_list.tpl" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/order_info.tpl" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/transaction.tpl" />
-        <option value="$PROJECT_DIR$/catalog/language/russian/checkout/cart.php" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/module/cart.tpl" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/checkout/cart.tpl" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/checkout/payment_address.tpl" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/checkout/shipping_address.tpl" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/checkout/shipping_method.tpl" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/checkout/payment_method.tpl" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/checkout/checkout.tpl" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/edit.tpl" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/account.tpl" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/address_form.tpl" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/password.tpl" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/product/category.tpl" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/stylesheet/stylesheet.css" />
+        <option value="$PROJECT_DIR$/catalog/language/russian/module/news.php" />
+        <option value="$PROJECT_DIR$/catalog/language/russian/common/header.php" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/forgotten.tpl" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/module/cart.tpl" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/common/home.tpl" />
+        <option value="$PROJECT_DIR$/catalog/controller/checkout/checkout.php" />
+        <option value="$PROJECT_DIR$/catalog/controller/checkout/cart.php" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/error/not_found.tpl" />
       </list>
     </option>
   </component>
@@ -350,7 +344,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="information" />
+              <option name="myItemId" value="error" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -708,144 +702,28 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/catalog/language/russian/checkout/cart.php">
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/address_form.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="43" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.8484849">
+        <state line="24" column="0" selection-start="533" selection-end="592" vertical-scroll-proportion="0.26136363">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/controller/checkout/confirm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/product/product.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="349" column="43" selection-start="21458" selection-end="21465" vertical-scroll-proportion="-3.1730769">
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#3;n#div#3;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#2;n#div#4;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#1;n#div#2;n#div#4;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#3;n#div#1;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#3;n#div#1;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <marker date="1363003855466" expanded="false" signature="26245:26259" placeholder="..." />
-            <marker date="1363003855466" expanded="false" signature="27307:27325" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/controller/checkout/cart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="380" column="31" selection-start="15012" selection-end="15027" vertical-scroll-proportion="0.332">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/checkout/cart.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="237" column="25" selection-start="11122" selection-end="11129" vertical-scroll-proportion="-1.9625">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#4;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#4;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#4;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <marker date="1363014731330" expanded="true" signature="12560:12574" placeholder="..." />
-            <marker date="1363014731330" expanded="true" signature="14582:14600" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/forgotten.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1493" selection-end="1630" vertical-scroll-proportion="-5.0384617">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/checkout/shipping_address.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="0" selection-start="3646" selection-end="3646" vertical-scroll-proportion="-4.0384617">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/order_info.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="78" vertical-scroll-proportion="-0.0">
+        <state line="15" column="13" selection-start="355" selection-end="356" vertical-scroll-proportion="0.2689243">
           <folding>
-            <marker date="1363005479918" expanded="true" signature="95:5002" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="149:353" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="417:1279" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="429:541" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="440:528" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="553:1268" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="564:1255" placeholder="..." />
-            <marker date="1363005479918" expanded="false" signature="598:609" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="610:900" placeholder="..." />
-            <marker date="1363005479918" expanded="false" signature="934:945" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="946:1243" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="1302:1791" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="1314:1546" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="1325:1533" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="1558:1780" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="1569:1767" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="1814:3871" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="1826:2253" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="1837:2240" placeholder="..." />
-            <marker date="1363005479918" expanded="false" signature="2192:2203" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="2265:3518" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="2325:3065" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="2351:2584" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="3142:3488" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="3530:3860" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="3586:3830" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="3921:4141" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="3933:4028" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="3944:4015" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="4040:4130" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="4051:4117" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="4246:4802" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="4258:4479" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="4269:4466" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="4491:4791" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="4552:4761" placeholder="..." />
-            <marker date="1363005479918" expanded="true" signature="4839:4963" placeholder="..." />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/order_list.tpl">
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/checkout/cart.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="5" selection-start="685" selection-end="685" vertical-scroll-proportion="-19.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/checkout/shipping_method.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="66" selection-start="1414" selection-end="1414" vertical-scroll-proportion="0.67">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/checkout/payment_address.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="4096" selection-end="4215" vertical-scroll-proportion="-1.9625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/checkout/payment_method.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="68" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.04">
+        <state line="37" column="35" selection-start="798" selection-end="810" vertical-scroll-proportion="-4.8846154">
           <folding>
-            <element signature="n#style#0;n#textarea#0;n#!!top" expanded="true" />
+            <marker date="1363014731330" expanded="false" signature="12560:12574" placeholder="..." />
+            <marker date="1363014731330" expanded="false" signature="14582:14600" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -857,32 +735,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/checkout/confirm.tpl">
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/account.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="2026" selection-end="2026" vertical-scroll-proportion="0.5719697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/stylesheet/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3381" column="19" selection-start="80959" selection-end="80959" vertical-scroll-proportion="-17.107143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/address_list.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="19" selection-start="1390" selection-end="1390" vertical-scroll-proportion="0.6761364">
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/wishlist.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="571" selection-end="571" vertical-scroll-proportion="-16.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/module/cart.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="32" selection-start="817" selection-end="817" vertical-scroll-proportion="-10.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/common/success.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/checkout/checkout.tpl">
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/common/home.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1234" selection-end="1234" vertical-scroll-proportion="-5.480769">
-          <folding>
-            <marker date="1363024347439" expanded="true" signature="5950:5964" placeholder="..." />
-            <marker date="1363024347439" expanded="true" signature="7226:7240" placeholder="..." />
-            <marker date="1363024347439" expanded="true" signature="14683:14697" placeholder="..." />
-            <marker date="1363024347439" expanded="true" signature="19735:19749" placeholder="..." />
-            <marker date="1363024347439" expanded="true" signature="23638:23652" placeholder="..." />
-            <marker date="1363024347439" expanded="true" signature="29923:29937" placeholder="..." />
-            <marker date="1363024347439" expanded="true" signature="33112:33126" placeholder="..." />
-            <marker date="1363024347439" expanded="true" signature="35071:35085" placeholder="..." />
-          </folding>
+        <state line="6" column="30" selection-start="228" selection-end="228" vertical-scroll-proportion="-3.75">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/stylesheet/stylesheet.css">
+    <entry file="file://$PROJECT_DIR$/catalog/controller/checkout/checkout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="926" column="6" selection-start="23481" selection-end="23481" vertical-scroll-proportion="0.70229006">
+        <state line="49" column="74" selection-start="1727" selection-end="1727" vertical-scroll-proportion="-11.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/controller/checkout/cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="397" column="0" selection-start="15478" selection-end="15478" vertical-scroll-proportion="-2.4038463">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/controller/account/address.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="211" column="75" selection-start="7626" selection-end="7626" vertical-scroll-proportion="-3.3461537">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/account/password.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="1013" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/error/not_found.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="473" selection-end="473" vertical-scroll-proportion="0.26136363">
           <folding />
         </state>
       </provider>

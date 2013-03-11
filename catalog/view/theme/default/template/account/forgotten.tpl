@@ -18,14 +18,14 @@
             font-size:11px;
         }
     </style>
-
-    <?php echo $content_top; ?>
     <div class="linktree">
         <?php foreach ($breadcrumbs as $breadcrumb) { ?>
         <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
         <?php } ?>
     </div>
-  <h1 style="margin-top:10px;"><?php echo $heading_title; ?></h1>
+    <h1 style="margin-top:10px;"><?php echo $heading_title; ?></h1>
+    <?php echo $content_top; ?>
+
     <br>
     <?php if ($error_warning) { ?>
     <div class="warning"><?php echo $error_warning; ?></div>

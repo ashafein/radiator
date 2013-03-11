@@ -27,6 +27,7 @@
         }
         #column-right + #content {
             margin-right: 0;
+            width:80%;
         }
     </style>
     <div class="linktree">
