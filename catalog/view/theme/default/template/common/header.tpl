@@ -66,17 +66,7 @@ DD_belatedPNG.fix('#logo img');
     {
 </style>
 <div class="body_bg">
-    <?php if($numbers) { ?>
-        <?php echo '<div class="header-contacts">';?>
-            <?php echo '<ul>';?>
-                <?php foreach($numbers as $number) {  ?>
-                    <?php echo '<li>';?>
-                        <?php echo $number['number'];?>
-                    <?php echo '</li>';?>
-                <?php } ?>
-            <?php echo '</ul>';?>
-        <?php echo '</div>';?>
-    <?php } ?>
+
 
     <div id="container">
         <div id="header">
@@ -105,11 +95,26 @@ DD_belatedPNG.fix('#logo img');
               </div>
 
               <?php if($help_number) { ?>
-                  <?php echo '<div class="help-contact">';?>
-                        <?php echo '<span class="help-text">'.$online_help.'</span>';?>
-                              <?php echo '<span class="help-number">'.$help_number['number'].'</span>';?>
-                  <?php echo '</div>';?>
+                  <div class="help-contact">
+                  
+                  <?php if($numbers) { ?>
+                      <?php echo '<div class="header-contacts">';?>
+                          <?php echo '<ul>';?>
+                              <?php foreach($numbers as $number) {  ?>
+                                  <?php echo '<li>';?>
+                                      <?php echo $number['number'];?>
+                                  <?php echo '</li>';?>
+                              <?php } ?>
+                                <li>
+                                   <?php echo $help_number['number']; ?>
+                                </li>
+                          <?php echo '</ul>';?>
+                      <?php echo '</div>';?>
+                  <?php } ?>
+
+                 </div>
               <?php } ?>
+
               <div class="linkz">
                   <ul><li>
                          <a  class="home" href="<?php echo $home; ?>"><?php echo $text_home; ?></a>
