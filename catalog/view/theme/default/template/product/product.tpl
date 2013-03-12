@@ -95,6 +95,18 @@
                             <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
                             <?php } ?>
                             <span><?php echo $text_model; ?></span> <?php echo $model; ?><br />
+                            <div class="attribute">
+                                <?php foreach ($attribute_groups as $attribute_group) { ?>
+                                <div>
+                                <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
+                                <div>
+                                    <span><?php echo $attribute['name']; ?>:</span>
+                                    <?php echo $attribute['text']; ?>
+                                </div>
+                                <?php } ?>
+                                </div>
+                                <?php } ?>
+                            </div>
                             <?php if ($reward) { ?>
                             <span><?php echo $text_reward; ?></span> <?php echo $reward; ?><br />
                             <?php } ?>
