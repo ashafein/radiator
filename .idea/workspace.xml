@@ -23,27 +23,36 @@
       <file leaf-file-name="stylesheet.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/stylesheet/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="290" column="22" selection-start="6657" selection-end="6657" vertical-scroll-proportion="-7.035714">
+            <state line="1606" column="14" selection-start="40845" selection-end="40845" vertical-scroll-proportion="-8.607142">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="header.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/common/header.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="18" selection-start="4467" selection-end="4467" vertical-scroll-proportion="0.4980916">
+            <state line="98" column="0" selection-start="4449" selection-end="4449" vertical-scroll-proportion="-5.019231">
               <folding>
-                <marker date="1363087029339" expanded="true" signature="2570:2612" placeholder="..." />
+                <marker date="1363095053117" expanded="true" signature="2570:2612" placeholder="..." />
                 <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1363087029339" expanded="true" signature="10248:10390" placeholder="..." />
-                <marker date="1363087029339" expanded="true" signature="10280:10326" placeholder="{...}" />
-                <marker date="1363087029339" expanded="true" signature="10343:10378" placeholder="{...}" />
-                <marker date="1363087029339" expanded="true" signature="10438:10580" placeholder="..." />
-                <marker date="1363087029339" expanded="true" signature="10470:10516" placeholder="{...}" />
-                <marker date="1363087029339" expanded="true" signature="10533:10568" placeholder="{...}" />
+                <marker date="1363095053117" expanded="true" signature="10230:10372" placeholder="..." />
+                <marker date="1363095053117" expanded="true" signature="10262:10308" placeholder="{...}" />
+                <marker date="1363095053117" expanded="true" signature="10325:10360" placeholder="{...}" />
+                <marker date="1363095053117" expanded="true" signature="10420:10562" placeholder="..." />
+                <marker date="1363095053117" expanded="true" signature="10452:10498" placeholder="{...}" />
+                <marker date="1363095053117" expanded="true" signature="10515:10550" placeholder="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/product/category.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="274" column="18" selection-start="8039" selection-end="11772" vertical-scroll-proportion="-19.875">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,17 +69,19 @@
       <file leaf-file-name="footer.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/common/footer.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="33" selection-start="1229" selection-end="1229" vertical-scroll-proportion="-11.541667">
+            <state line="36" column="62" selection-start="1550" selection-end="1550" vertical-scroll-proportion="-13.416667">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.tpl" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="search.tpl" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/product/search.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="159" column="0" selection-start="6762" selection-end="6762" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="220" column="0" selection-start="9485" selection-end="9485" vertical-scroll-proportion="0.35326087">
+              <folding>
+                <element signature="n#style#0;n#input#1;n#p#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,12 +106,12 @@
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/information/sitemap.tpl" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/information/information.tpl" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/account/login.tpl" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/product/search.tpl" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/product/compare.tpl" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/common/footer.tpl" />
         <option value="$PROJECT_DIR$/catalog/language/russian/common/header.php" />
-        <option value="$PROJECT_DIR$/catalog/view/theme/default/stylesheet/stylesheet.css" />
         <option value="$PROJECT_DIR$/catalog/view/theme/default/template/common/header.tpl" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/default/stylesheet/stylesheet.css" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/common/footer.tpl" />
+        <option value="$PROJECT_DIR$/catalog/view/theme/default/template/product/search.tpl" />
       </list>
     </option>
   </component>
@@ -334,40 +345,6 @@
               <option name="myItemId" value="default" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="account" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="opencart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="opencart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="catalog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="theme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -398,72 +375,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="catalog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="opencart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="opencart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="catalog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="language" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="russian" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="opencart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="opencart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="catalog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="language" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="russian" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="opencart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="opencart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="catalog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="language" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -665,30 +576,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/product/search.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="159" column="0" selection-start="6762" selection-end="6762" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/product/category.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="35" selection-start="0" selection-end="1079" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/product/compare.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="34" selection-start="530" selection-end="530" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/common/footer.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="33" selection-start="1229" selection-end="1229" vertical-scroll-proportion="-11.541667">
           <folding />
         </state>
       </provider>
@@ -702,24 +592,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/stylesheet/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="290" column="22" selection-start="6657" selection-end="6657" vertical-scroll-proportion="-7.035714">
+        <state line="1606" column="14" selection-start="40845" selection-end="40845" vertical-scroll-proportion="-8.607142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/common/footer.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="62" selection-start="1550" selection-end="1550" vertical-scroll-proportion="-13.416667">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/common/header.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="18" selection-start="4467" selection-end="4467" vertical-scroll-proportion="0.4980916">
+        <state line="98" column="0" selection-start="4449" selection-end="4449" vertical-scroll-proportion="-5.019231">
           <folding>
-            <marker date="1363087029339" expanded="true" signature="2570:2612" placeholder="..." />
+            <marker date="1363095053117" expanded="true" signature="2570:2612" placeholder="..." />
             <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1363087029339" expanded="true" signature="10248:10390" placeholder="..." />
-            <marker date="1363087029339" expanded="true" signature="10280:10326" placeholder="{...}" />
-            <marker date="1363087029339" expanded="true" signature="10343:10378" placeholder="{...}" />
-            <marker date="1363087029339" expanded="true" signature="10438:10580" placeholder="..." />
-            <marker date="1363087029339" expanded="true" signature="10470:10516" placeholder="{...}" />
-            <marker date="1363087029339" expanded="true" signature="10533:10568" placeholder="{...}" />
+            <marker date="1363095053117" expanded="true" signature="10230:10372" placeholder="..." />
+            <marker date="1363095053117" expanded="true" signature="10262:10308" placeholder="{...}" />
+            <marker date="1363095053117" expanded="true" signature="10325:10360" placeholder="{...}" />
+            <marker date="1363095053117" expanded="true" signature="10420:10562" placeholder="..." />
+            <marker date="1363095053117" expanded="true" signature="10452:10498" placeholder="{...}" />
+            <marker date="1363095053117" expanded="true" signature="10515:10550" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/product/category.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="274" column="18" selection-start="8039" selection-end="11772" vertical-scroll-proportion="-19.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/view/theme/default/template/product/search.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="220" column="0" selection-start="9485" selection-end="9485" vertical-scroll-proportion="0.35326087">
+          <folding>
+            <element signature="n#style#0;n#input#1;n#p#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

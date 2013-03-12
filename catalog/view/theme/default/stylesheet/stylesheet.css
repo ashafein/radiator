@@ -1601,7 +1601,7 @@ form h2 {
     text-decoration: none;
 }
 .product-list {
-    background: none repeat scroll 0 0 #F4F4F4;
+    background: none repeat scroll 0 0 #fff;
     border: 1px solid #BBBBBB;
     box-shadow: 1px 1px 1px #FFFFFF inset;
     margin-bottom: 20px;

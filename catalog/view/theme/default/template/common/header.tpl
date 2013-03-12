@@ -96,7 +96,7 @@ DD_belatedPNG.fix('#logo img');
 
               <?php if($help_number) { ?>
                   <div class="help-contact">
-                  
+
                   <?php if($numbers) { ?>
                       <?php echo '<div class="header-contacts">';?>
                           <?php echo '<ul>';?>
