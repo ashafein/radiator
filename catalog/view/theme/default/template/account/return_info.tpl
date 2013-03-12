@@ -20,8 +20,9 @@
             font-size:11px;
         }
 
-        #content .content{
-
+        #content .content br{
+            display: block;
+            margin-bottom: 5px;
         }
 
 
@@ -127,4 +128,6 @@
   <?php echo $content_bottom; ?>
 </div>
 </div>
+<br />
+<br />
 <?php echo $footer; ?>

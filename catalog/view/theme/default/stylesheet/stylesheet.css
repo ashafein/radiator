@@ -2200,7 +2200,7 @@ form h2 {
 }
 .return-opened textarea {
     vertical-align: top;
-    width: 98%;
+    width: 70%;
 }
 .return-remove {
     float: left;
@@ -2219,7 +2219,7 @@ form h2 {
 }
 .return-captcha {
     float: right;
-    width: 49%;
+    width: 100%;
 }
 .download-list {
     background-color: #E0E0E0;
@@ -2473,9 +2473,6 @@ form h2 {
     width: 48%;
 }
 .sitemap-info {
-    background-color: #F4F4F4;
-    border: 1px solid #BBBBBB;
-    box-shadow: 1px 1px 1px #FFFFFF inset;
     margin-bottom: 40px;
     overflow: auto;
 }
@@ -3456,5 +3453,8 @@ input.add {
     color: #000;
 }
 
-#content .content.faq-text {
+#content .faq-text {
+    background-color: #FFFFD8;
+    padding: 10px;
 }
+.lang-discr:

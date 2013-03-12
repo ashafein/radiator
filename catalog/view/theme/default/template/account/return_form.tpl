@@ -20,8 +20,9 @@
             font-size:11px;
         }
 
-        #content .content{
-
+        #content .content br{
+            display: block;
+            margin-bottom: 5px;
         }
 
 
@@ -174,5 +175,7 @@
 $(document).ready(function() {
 	$('.date').datepicker({dateFormat: 'yy-mm-dd'});
 });
-//--></script> 
+//--></script>
+<br />
+<br />
 <?php echo $footer; ?>

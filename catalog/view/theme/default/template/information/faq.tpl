@@ -36,13 +36,16 @@
         <?php } ?>
     </div>
     <h1 style="margin-top:10px;"><?php echo $heading_title; ?></h1>
-    <br>
     <?php echo $column_left; ?><?php echo $column_right; ?>
     <div id="content">
         <?php echo $content_top; ?>
 
-      <div class="content faq-text">
-        <?php echo $description; ?>
+      <div class="content">
+       <?php if( $description)  { ?>
+           <div class=" faq-text">
+            <?php echo $description; ?>
+           </div>
+        <?php } ?>
         <?php if (isset($topics)) { ?>
           <div class="content">
           <?php foreach ($topics as $topic) { ?>

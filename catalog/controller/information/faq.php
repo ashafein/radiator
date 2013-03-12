@@ -73,7 +73,7 @@ class ControllerInformationFaq extends Controller {
 		  	} else {
 		  		$this->data['heading_title'] = $this->language->get('heading_title');
 
-		  		$this->data['description'] = $this->language->get('text_description');
+		  		$this->data['description'] = '';
 		  	}
 
 			$topic_total = $this->model_fido_faq->getTotalFaqsByTopicId($topic_id);
