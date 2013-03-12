@@ -1,36 +1,40 @@
 <?php echo $header; ?>
-    <div id="container_bg">
-    <style type="text/css">
-        #container_bg {
-            width: 1055px;
-        }
+<div id="container_bg">
+<style type="text/css">
+    #container_bg {
+        width: 1055px;
+    }
 
-        body {
-            background:#E8A729 url(catalog/view/theme/default/image/body_listing.png) repeat-x;
-        }
-        .linktree {
-            margin-top:0px;
-            margin-bottom:10px;
-            margin-left:3px;
-        }
-        .linktree a {
-            text-decoration:none;
-            font-size:11px;
-        }
+    body {
+        background:#E8A729 url(catalog/view/theme/default/image/body_listing.png) repeat-x;
+    }
+    .linktree {
+        margin-top:0px;
+        margin-bottom:10px;
+        margin-left:3px;
+    }
+    .linktree a {
+        text-decoration:none;
+        font-size:11px;
+    }
 
-        #content {
-            background-color: #fff;
-            padding: 10px 5px 10px 10px;
-        }
-    </style>
-    <?php echo $column_left; ?><?php echo $column_right; ?>
-    <div id="content"><?php echo $content_top; ?>
-      <div class="breadcrumb">
-        <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-        <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
-        <?php } ?>
-      </div>
-      <h1><?php echo $heading_title; ?></h1>
+    #content {
+        background-color: #FFC14A;
+        padding: 10px 5px 10px 10px;
+    }
+</style>
+<div class="linktree">
+    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+    <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+    <?php } ?>
+</div>
+<h1 style="margin-top:10px;"><?php echo $heading_title; ?></h1>
+<br />
+<br />
+<?php echo $column_left; ?><?php echo $column_right; ?>
+
+<div id="content">
+    <?php echo $content_top; ?>
       <b><?php echo $text_critea; ?></b>
       <div class="content">
         <p><?php echo $entry_search; ?>
@@ -78,36 +82,81 @@
         <label for="description"><?php echo $entry_description; ?></label>
       </div>
       <div class="buttons">
-        <div class="right"><input type="button" value="<?php echo $button_search; ?>" id="button-search" class="button" /></div>
+        <div class="right">
+            <a  class="button" id="button-search">
+                <span> <?php echo $button_search; ?> </span>
+            </a>
+        </div>
       </div>
       <h2><?php echo $text_search; ?></h2>
       <?php if ($products) { ?>
-      <div class="product-filter">
-        <div class="display"><b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a onclick="display('grid');"><?php echo $text_grid; ?></a></div>
-        <div class="limit"><?php echo $text_limit; ?>
-          <select onchange="location = this.value;">
-            <?php foreach ($limits as $limits) { ?>
-            <?php if ($limits['value'] == $limit) { ?>
-            <option value="<?php echo $limits['href']; ?>" selected="selected"><?php echo $limits['text']; ?></option>
-            <?php } else { ?>
-            <option value="<?php echo $limits['href']; ?>"><?php echo $limits['text']; ?></option>
-            <?php } ?>
-            <?php } ?>
-          </select>
+    <div class="product-filter column">
+        <div class="limit">
+            <dl class="btn-drop">
+                <dt></dt>
+                <dd><?php echo $limit; ?></dd>
+                <select onchange="location = this.value;">
+                    <?php foreach ($limits as $limits) { ?>
+                    <?php if ($limits['value'] == $limit) { ?>
+                    <option value="<?php echo $limits['href']; ?>" selected="selected"><?php echo $limits['text']; ?></option>
+                    <?php } else { ?>
+                    <option value="<?php echo $limits['href']; ?>"><?php echo $limits['text']; ?></option>
+                    <?php } ?>
+                    <?php } ?>
+                </select>
+            </dl>
+            <b><?php echo $text_limit; ?></b>
         </div>
-        <div class="sort"><?php echo $text_sort; ?>
-          <select onchange="location = this.value;">
-            <?php foreach ($sorts as $sorts) { ?>
-            <?php if ($sorts['value'] == $sort . '-' . $order) { ?>
-            <option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option>
-            <?php } else { ?>
-            <option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
-            <?php } ?>
-            <?php } ?>
-          </select>
+
+        <div class="sort">
+            <dl class="btn-drop">
+                <dt></dt>
+                <?php foreach ($sorts as $sortings) { ?>
+                <?php if ($sortings['value'] == $sort . '-' . $order) { ?>
+                <dd>
+                    <?php echo $sortings['text']; ?>
+                </dd>
+                <?php } ?>
+                <?php } ?>
+
+                <select onchange="location = this.value;">
+                    <?php foreach ($sorts as $sorts) { ?>
+                    <?php if ($sorts['value'] == $sort . '-' . $order) { ?>
+                    <option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option>
+                    <?php } else { ?>
+                    <option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
+                    <?php } ?>
+                    <?php } ?>
+                </select>
+            </dl>
+            <b><?php echo $text_sort; ?></b>
         </div>
-      </div>
-      <div class="product-compare"><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></div>
+
+        <div class="display">
+            <div class="catz">
+                <a class="view-list" onclick="display('list');" title="List">
+                    <?php echo $text_list; ?>
+                    <span class="icon icon-list"> </span>
+                </a>
+
+                <a class="view-grid" onclick="display('grid');" title="Grid">
+                    <?php echo $text_grid; ?>
+                    <span class="icon icon-grid"> </span>
+                </a>
+
+            </div>
+            <b><?php echo $text_display; ?></b>
+        </div>
+
+        <div class="product-compare">
+            <a href="<?php echo $compare; ?>" id="compare-total">
+                <?php echo $text_compare; ?>
+            </a>
+        </div>
+        <div class="clearfix"></div>
+
+    </div>
+
       <div class="product-list">
         <?php foreach ($products as $product) { ?>
         <div>
@@ -142,7 +191,9 @@
       <?php } else { ?>
       <div class="content"><?php echo $text_empty; ?></div>
       <?php }?>
-      <?php echo $content_bottom; ?></div>
+      <?php echo $content_bottom; ?>
+</div>
+
     <script type="text/javascript"><!--
     $('#content input[name=\'filter_name\']').keydown(function(e) {
         if (e.keyCode == 13) {
@@ -272,4 +323,6 @@
     }
     //--></script>
 </div>
+<br />
+<br />
 <?php echo $footer; ?>

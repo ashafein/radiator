@@ -1,15 +1,47 @@
 <?php echo $header; ?>
+<div id="container_bg">
+    <style type="text/css">
+        #container_bg {
+            width: 1055px;
+        }
+
+        body {
+            background:#E8A729 url(catalog/view/theme/default/image/body_listing.png) repeat-x;
+        }
+        .linktree {
+            margin-top:0px;
+            margin-bottom:10px;
+            margin-left:3px;
+        }
+        .linktree a {
+            text-decoration:none;
+            font-size:11px;
+        }
+        #content table {
+            background-color: #fff;
+        }
+        #content {
+
+            padding: 10px 5px 10px 10px;
+        }
+    </style>
+    <div class="linktree">
+        <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+        <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+        <?php } ?>
+    </div>
+    <h1 style="margin-top:10px;"><?php echo $heading_title; ?></h1>
+    <br />
+    <div id="notification"></div>
+    <br />
+    <?php echo $column_left; ?><?php echo $column_right; ?>
+
+    <div id="content">
+        <?php echo $content_top; ?>
 <?php if ($success) { ?>
 <div class="success"><?php echo $success; ?><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>
 <?php } ?>
-<?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content"><?php echo $content_top; ?>
-  <div class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
-    <?php } ?>
-  </div>
-  <h1><?php echo $heading_title; ?></h1>
+
   <?php if ($products) { ?>
   <table class="compare-info">
     <thead>
@@ -131,5 +163,8 @@
     <div class="right"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a></div>
   </div>
   <?php } ?>
-  <?php echo $content_bottom; ?></div>
-<?php echo $footer; ?>
+  <?php echo $content_bottom; ?>
+    </div>
+</div>
+
+    <?php echo $footer; ?>

@@ -77,8 +77,8 @@
                   <a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a><br />
                   <br />
                   <a  class="button" onclick="$('#login').submit();">
-                     <span> <?php echo $button_login; ?> </span>
-                  </a>
+                    <span> <?php echo $button_login; ?> </span>
+                </a>
                   <?php if ($redirect) { ?>
                   <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
                   <?php } ?>
