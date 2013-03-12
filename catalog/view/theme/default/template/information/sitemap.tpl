@@ -86,7 +86,7 @@
         <li><a href="<?php echo $cart; ?>"><?php echo $text_cart; ?></a></li>
         <li><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></li>
         <li><a href="<?php echo $search; ?>"><?php echo $text_search; ?></a></li>
-        <li><?php echo $text_information; ?>
+        <li>
           <ul>
             <?php foreach ($informations as $information) { ?>
             <li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>

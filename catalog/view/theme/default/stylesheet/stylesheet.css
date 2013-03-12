@@ -2480,12 +2480,55 @@ form h2 {
     float: left;
     width: 48%;
 }
+.sitemap-info ul{
+    list-style: none;
+}
+.sitemap-info .left li a:hover, .sitemap-info .right li a:hover{
+    background-image: linear-gradient(bottom, rgb(247,197,80) 0%, rgb(250,233,120) 0%, rgb(255,255,158) 82%);
+    background-image: -o-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(250,233,120) 0%, rgb(255,255,158) 82%);
+    background-image: -moz-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(250,233,120) 0%, rgb(255,255,158) 82%);
+    background-image: -webkit-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(250,233,120) 0%, rgb(255,255,158) 82%);
+    background-image: -ms-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(250,233,120) 0%, rgb(255,255,158) 82%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(247,197,80)),
+        color-stop(0, rgb(250,233,120)),
+        color-stop(0.82, rgb(255,255,158))
+    );
+    color: #4C6C00;
+}
+
 .sitemap-info .left li a, .sitemap-info .right li a {
+
+    background-image: linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+    background-image: -o-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+    background-image: -moz-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+    background-image: -webkit-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+    background-image: -ms-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(247,197,80)),
+        color-stop(0, rgb(253,231,88)),
+        color-stop(0.82, rgb(254,254,104))
+    );
+    display: block;
+    padding: 10px;
+    border: 1px solid #fdfe96;
+    box-shadow: 1px 1px 1px rgb(247,197,80) inset;
     color: #444444;
     font-weight: bold;
-    line-height: 20px;
     text-decoration: none;
+    text-shadow: 0 1px rgb(247,197,80);
+    width: 250px;
+    margin-bottom: 5px;
 }
+
 .sitemap-info .right {
     float: left;
     width: 48%;
