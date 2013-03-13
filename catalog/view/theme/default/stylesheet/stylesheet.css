@@ -265,7 +265,7 @@ label {
     margin-right: 193px;
 }
 #header {
-    height: 137px;
+    height: 158px;
     margin-bottom: 7px;
     padding-bottom: 4px;
     position: relative;
@@ -279,7 +279,7 @@ label {
 }
 
 .header-contacts {
-    max-width: 600px;
+    max-width: 800px;
     float: right;
 
 
@@ -288,13 +288,14 @@ label {
     font-style: italic;
 }
 .header-contacts ul{
-    margin-right: 15px;
+    margin: 3px 15px 0px 0;
 }
 .help-contact {
     float: right;
     width: 580px;
-    margin: 10px 0px 10px 0px;
+    margin: 0px 0px 0px 0px;
     text-align: right;
+    display: inline-block;
 }
 
 .help-contact .help-text {
@@ -314,6 +315,7 @@ label {
     font-weight: 100;
     border-radius: 15px;
     margin-right: 10px;
+    display: inline-block;
     padding: 10px 15px 10px 15px;
     background-image: linear-gradient(bottom, rgb(159,31,11) 19%, rgb(186,42,20) 61%);
     background-image: -o-linear-gradient(bottom, rgb(159,31,11) 19%, rgb(186,42,20) 61%);
@@ -334,7 +336,7 @@ label {
     display: inline-block;
     padding-left: 15px;
     background: url(../image/phone.png) no-repeat left center scroll;
-    margin-left: 8px;
+    margin: 5px 0 0 5px;
 }
 
 
@@ -3240,8 +3242,8 @@ button {
 }
 .linktree {
     margin-bottom: 10px;
+    margin-top: -3px !important;
     margin-left: 3px;
-    margin-top: 0;
 }
 .linktree a {
     color: #4C6C00;
