@@ -1,11 +1,35 @@
-<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content"><?php echo $content_top; ?>
-  <div class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
-    <?php } ?>
-  </div>
-  <h1><?php echo $heading_title; ?></h1>
+<?php echo $header; ?>
+<div id="container_bg">
+    <style type="text/css">
+        body {
+            background:#E8A729 url(catalog/view/theme/default/image/body_listing.png) repeat-x;
+        }
+        .linktree {
+            margin-top:0px;
+            margin-bottom:10px;
+            margin-left:3px;
+        }
+        .linktree a {
+            text-decoration:none;
+            font-size:11px;
+        }
+
+    </style>
+
+
+    <div class="linktree">
+        <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+        <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+        <?php } ?>
+    </div>
+    <h1 style="margin-top:10px;"><?php echo $heading_title; ?></h1>
+    <br>
+    <br>
+    <br>
+
+    <?php echo $column_left; ?><?php echo $column_right; ?>
+    <div id="content">
+        <?php echo $content_top; ?>
   <?php if ($products) { ?>
   <div class="product-filter">
     <div class="display"><b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a onclick="display('grid');"><?php echo $text_grid; ?></a></div>
@@ -70,8 +94,10 @@
     <div class="right"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a></div>
   </div>
   <?php }?>
-  <?php echo $content_bottom; ?></div>
-<script type="text/javascript"><!--
+  <?php echo $content_bottom; ?>
+  </div>
+</div>
+    <script type="text/javascript"><!--
 function display(view) {
 	if (view == 'list') {
 		$('.product-grid').attr('class', 'product-list');

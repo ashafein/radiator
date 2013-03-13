@@ -38,7 +38,7 @@
 
 
 
-    <?php echo $content_top; ?>
+
     <div class="linktree">
         <?php foreach ($breadcrumbs as $breadcrumb) { ?>
         <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
@@ -51,6 +51,7 @@
     <div id="notification"></div>
     <?php echo $column_left; ?><?php echo $column_right; ?>
     <div id="content">
+    <?php echo $content_top; ?>
         <div class="block-white">
             <div class="block-content"> </div>
             <div class="separator"></div>
@@ -339,7 +340,7 @@
                         <br />
                         <br />
                         <b><?php echo $entry_review; ?></b>
-                        <textarea name="text" cols="40" rows="8" style="width: 98%;"></textarea>
+                        <textarea name="text" cols="40" rows="8" style="width: 93%;"></textarea>
                         <span style="font-size: 11px;"><?php echo $text_note; ?></span><br />
                         <br />
                         <b><?php echo $entry_rating; ?></b> <span><?php echo $entry_bad; ?></span>&nbsp;
