@@ -23,6 +23,7 @@
         <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
         <?php } ?>
     </div>
+    <br />
     <h1 style="margin-top:10px;"><?php echo $heading_title; ?></h1>
 
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="forgotten">

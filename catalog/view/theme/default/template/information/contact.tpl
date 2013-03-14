@@ -30,8 +30,9 @@
         <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
         <?php } ?>
     </div>
+    <br />
     <h1 style="margin-top:10px;"><?php echo $heading_title; ?></h1>
-    <br>
+    <br />
     <?php echo $column_left; ?><?php echo $column_right; ?>
     <div id="content">
     <?php echo $content_top; ?>

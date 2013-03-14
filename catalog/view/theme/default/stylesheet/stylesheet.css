@@ -744,7 +744,7 @@ label {
     cursor: pointer;
     float: right;
     padding-right: 4px;
-    padding-top: 4px;
+
 }
 .required {
     color: #FF0000;
@@ -2015,7 +2015,6 @@ form h2 {
     border-bottom: 1px solid #DDDDDD;
     border-right: 1px solid #DDDDDD;
     color: #4D4D4D;
-    float: left;
     padding: 7px;
     text-align: left;
     vertical-align: top;
@@ -2655,10 +2654,10 @@ body#home a#home_link {
     border-radius: 4px 4px 0 0;
     height: 34px;
     margin-bottom: 0;
-    margin-left: -10px;
+    margin-left: -33px;
     margin-top: 30px;
     padding: 0 0 3px;
-    width: 1000px;
+    width: 1048px;
 }
 #menu ul {
     list-style: none outside none;
@@ -3511,4 +3510,23 @@ input.add {
 
 #review+h2 {
     margin-top: 10px;
+}
+
+.news-data{
+    padding-left: 5px;
+}
+.read-more {
+    float:right;
+    width: 49%;
+}
+.read-more a{
+    display: inline-block;
+    float: right;
+}
+p.news-date {
+    display: block;
+    float: left;
+    width: 49%;
+    margin: 0;
+    padding: 0;
 }

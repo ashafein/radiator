@@ -32,9 +32,7 @@
             background-color: #FFFFD8;
             color: #000000;
         }
-        .content p {
-            margin-top: 10px;
-        }
+}
     </style>
 
     <div class="linktree">
@@ -42,6 +40,7 @@
         <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
         <?php } ?>
     </div>
+    <br />
     <h1 style="margin-top:10px;"><?php echo $heading_title; ?></h1>
     <br>
     <?php echo $column_left; ?><?php echo $column_right; ?>
@@ -62,8 +61,16 @@
     <?php foreach ($news_data as $news) { ?>
       <div class="content">
         <h3 style="margin-top: 5px;"><?php echo $news['title']; ?></h3>
-        <?php echo $news['description']; ?> &hellip; <a href="<?php echo $news['href']; ?>"><?php echo $text_read_more; ?></a></p>
-        <p><b><?php echo $text_date_added; ?></b>&nbsp;<?php echo $news['date_added']; ?></p>
+        <?php echo $news['description']; ?> &hellip;</p>
+        <div class="news-data">
+            <p class="news-date"><b><?php echo $text_date_added; ?></b>&nbsp;<?php echo $news['date_added']; ?></p>
+            <div class="read-more">
+                <a class="button" href="<?php echo $news['href']; ?>">
+                    <?php echo $text_read_more; ?>
+                </a>
+            </div>
+
+        </div>
       </div>
     <?php } ?>
   <?php } ?>

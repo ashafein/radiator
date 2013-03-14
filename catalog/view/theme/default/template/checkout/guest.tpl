@@ -102,7 +102,9 @@
 <?php } ?>
 <div class="buttons">
   <div class="right">
-    <input type="button" value="<?php echo $button_continue; ?>" id="button-guest" class="button" />
+      <a class="button" id="button-guest">
+          <span><?php echo $button_continue; ?> </span>
+      </a>
   </div>
 </div>
 <script type="text/javascript"><!--

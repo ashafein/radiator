@@ -30,10 +30,11 @@
         <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
         <?php } ?>
     </div>
+    <br />
     <h1 style="margin-top:10px;"><?php echo $heading_title; ?></h1>
     <br />
     <div id="notification"></div>
-    <br />
+
     <?php echo $column_left; ?><?php echo $column_right; ?>
 
     <div id="content">
@@ -144,7 +145,11 @@
     <tr>
       <td></td>
       <?php foreach ($products as $product) { ?>
-      <td><input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" /></td>
+      <td>
+          <a class="button" onclick="addToCart('<?php echo $product['product_id']; ?>');">
+              <?php echo $button_cart; ?>
+          </a>
+      </td>
       <?php } ?>
     </tr>
     <tr>
@@ -155,7 +160,11 @@
     </tr>
   </table>
   <div class="buttons">
-    <div class="right"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a></div>
+    <div class="right">
+        <a href="<?php echo $continue; ?>" class="button">
+            <?php echo $button_continue; ?>
+        </a>
+    </div>
   </div>
   <?php } else { ?>
   <div class="content"><?php echo $text_empty; ?></div>

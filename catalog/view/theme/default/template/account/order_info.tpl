@@ -1,12 +1,45 @@
 <?php echo $header; ?>
-<?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content"><?php echo $content_top; ?>
-  <div class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
-    <?php } ?>
-  </div>
-  <h1><?php echo $heading_title; ?></h1>
+
+<div id="container_bg">
+
+    <style type="text/css">
+        #container_bg {
+            width: 1000px;
+        }
+
+        body {
+            background:#E8A729 url(catalog/view/theme/default/image/body_listing.png) repeat-x;
+        }
+        .linktree {
+            margin-top:0px;
+            margin-bottom:10px;
+            margin-left:3px;
+        }
+        .linktree a {
+            text-decoration:none;
+            font-size:11px;
+        }
+        a.button{
+            margin-right: 24px;
+        }
+        #content .content{
+            width:77%;
+        }
+        #column-right + #content {
+            margin-right: 0;
+            width:80%;
+        }
+    </style>
+    <div class="linktree">
+        <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+        <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
+        <?php } ?>
+    </div>
+    <br />
+    <h1><?php echo $heading_title; ?></h1>
+    <?php echo $column_left; ?><?php echo $column_right; ?>
+
+    <div id="content">
   <table class="list">
     <thead>
       <tr>
