@@ -245,8 +245,11 @@ class ControllerProductSearch extends Controller {
 				} else {
 					$rating = false;
 				}
-			
-				$this->data['products'][] = array(
+                $product_info = $this->model_catalog_product->getProduct($result['product_id']);
+
+                $attribute_groups = $this->model_catalog_product->getProductAttributes($result['product_id']);
+
+                $this->data['products'][] = array(
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
 					'name'        => $result['name'],
@@ -256,11 +259,13 @@ class ControllerProductSearch extends Controller {
 					'tax'         => $tax,
 					'rating'      => $result['rating'],
 					'reviews'     => sprintf($this->language->get('text_reviews'), (int)$result['reviews']),
-					'href'        => $this->url->link('product/product', $url . '&product_id=' . $result['product_id'])
-				);
+					'href'        => $this->url->link('product/product', $url . '&product_id=' . $result['product_id']),
+                    'manufacturer'=> $product_info['manufacturer'],
+                    'attribute_groups' => $attribute_groups
+                );
 			}
-					
-			$url = '';
+
+            $url = '';
 			
 			if (isset($this->request->get['filter_name'])) {
 				$url .= '&filter_name=' . urlencode(html_entity_decode($this->request->get['filter_name'], ENT_QUOTES, 'UTF-8'));

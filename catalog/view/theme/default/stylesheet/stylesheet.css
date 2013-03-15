@@ -1525,19 +1525,37 @@ form h2 {
     text-decoration: underline;
 }
 .manufacturer-list {
-    background-color: #F4F4F4;
-    border: 1px solid #BBBBBB;
-    box-shadow: 1px 1px 1px #FFFFFF inset;
+    background-color: #FFC14A;
+    border:1px solid #E2B301;;
+    box-shadow: 1px 1px 1px #E2B301 inset;
     margin-bottom: 20px;
     overflow: auto;
     padding: 5px;
 }
 .manufacturer-heading {
-    background: none repeat scroll 0 0 #F8F8F8;
-    font-size: 15px;
+    background-image: linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+    background-image: -o-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+    background-image: -moz-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+    background-image: -webkit-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+    background-image: -ms-linear-gradient(bottom, rgb(247,197,80) 0%, rgb(253,231,88) 0%, rgb(254,254,104) 82%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(247,197,80)),
+        color-stop(0, rgb(253,231,88)),
+        color-stop(0.82, rgb(254,254,104))
+    );
+    display: block;
+    padding: 10px;
+    border: 1px solid #fdfe96;
+    box-shadow: 1px 1px 1px rgb(247,197,80) inset;
+    color: #444444;
     font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
     margin-bottom: 6px;
-    padding: 5px 8px;
 }
 .manufacturer-content {
     padding: 8px;
@@ -1742,7 +1760,10 @@ form h2 {
 .product-grid .rating {
     display: block;
     margin-bottom: 4px;
+    position: absolute;
+    right: 16px;
     text-align: right;
+    top: 15px;
 }
 .product-grid .price {
     color: #333333;
@@ -2650,6 +2671,9 @@ body#home a#home_link {
 }
 #menu {
     background: url("../image/menu.png") repeat scroll 0 0 #444444;
+    clear: both;
+    display: block;
+    overflow: hidden;
     border-bottom: medium none;
     border-radius: 4px 4px 0 0;
     height: 34px;
@@ -2941,15 +2965,17 @@ button {
     width: 0;
 }
 .btn-drop dd {
-    color: #FFFFFF !important;
+    color: #666 !important;
     display: block;
     font-weight: bold;
     padding: 0 26px 0 10px;
     text-align: left;
 }
+
+
 .btn-drop select {
     background: none repeat scroll 0 0 #19190F;
-    color: #FFFFFF;
+    color: #666;
     cursor: pointer;
     height: 25px;
     opacity: 0;
@@ -3529,4 +3555,19 @@ p.news-date {
     width: 49%;
     margin: 0;
     padding: 0;
+}
+.product-list-attr,
+.product-list-manufacturer {
+    display: inline-block;
+}
+.product-list-attr,
+.product-list-manufacturer {
+    margin-top: 5px;
+    margin-right: 10px;
+    color: #000;
+}
+
+.product-grid .product-list-attr,
+.product-grid .product-list-manufacturer {
+    display: block;
 }

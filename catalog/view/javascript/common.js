@@ -2,18 +2,18 @@ $(document).ready(function() {
     /* Search */
     $('.button-search').bind('click', function() {
         url = $('base').attr('href') + 'index.php?route=product/search';
-        var search = $('input[name=\'search\']').attr('value');
-        if (search) {
-            url += '&search=' + encodeURIComponent(search);
+        var filter_name = $('input[name=\'filter_name\']').attr('value');
+        if (filter_name) {
+            url += '&filter_name=' + encodeURIComponent(filter_name);
         }
         location = url;
     });
-    $('#header input[name=\'search\']').bind('keydown', function(e) {
+    $('#header input[name=\'filter_name\']').bind('keydown', function(e) {
         if (e.keyCode == 13) {
             url = $('base').attr('href') + 'index.php?route=product/search';
-            var search = $('input[name=\'search\']').attr('value');
-            if (search) {
-                url += '&search=' + encodeURIComponent(search);
+            var filter_name = $('input[name=\'filter_name\']').attr('value');
+            if (filter_name) {
+                url += '&filter_name=' + encodeURIComponent(filter_name);
             }
             location = url;
         }

@@ -38,11 +38,11 @@
       <b><?php echo $text_critea; ?></b>
       <div class="content">
         <p><?php echo $entry_search; ?>
-          <?php if ($filter_name) { ?>
-          <input type="text" name="filter_name" value="<?php echo $filter_name; ?>" />
-          <?php } else { ?>
-          <input type="text" name="filter_name" value="<?php echo $filter_name; ?>" onclick="this.value = '';" onkeydown="this.style.color = '000000'" style="color: #999;" />
-          <?php } ?>
+            <?php if ($filter_name) { ?>
+            <input type="text" name="filter_name" value="<?php echo $filter_name; ?>" />
+            <?php } else { ?>
+            <input type="text" name="filter_name" value="<?php echo $filter_name; ?>" onclick="this.value = '';" onkeydown="this.style.color = '000000'" style="color: #999;" />
+            <?php } ?>
           <select name="filter_category_id">
             <option value="0"><?php echo $text_category; ?></option>
             <?php foreach ($categories as $category_1) { ?>
@@ -170,7 +170,36 @@
 
             <?php } ?>
             <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
-            <div class="description"><?php echo $product['description']; ?></div>
+            <div class="description">
+                <?php echo $product['description']; ?>
+                <div class="description-additional">
+                    <?php if ( $product['attribute_groups']) { ?>
+                    <div class="product-list-attr">
+                        <?php foreach ($product['attribute_groups'] as $attribute_group) { ?>
+                        <div>
+                            <?php foreach ($attribute_group['attribute'] as $attribute) { ?>
+                            <div>
+                                <span><?php echo $attribute['name']; ?>:</span>
+                                <?php echo $attribute['text']; ?>
+                            </div>
+                            <?php } ?>
+                        </div>
+                        <?php } ?>
+                    </div>
+                    <?php } ?>
+
+                    <?php if ($product['manufacturer']) { ?>
+                    <div class="product-list-manufacturer">
+                                    <span>
+                                        <?php echo $text_manufacturer; ?>
+                                    </span>
+                        <a href="<?php echo $manufacturers; ?>" >
+                            <?php echo $product['manufacturer']; ?>
+                        </a>
+                    </div>
+                    <?php } ?>
+                </div>
+            </div>
             <?php if ($product['price']) { ?>
             <div class="price">
                 <?php if (!$product['special']) { ?>
@@ -221,35 +250,32 @@
 
 <script type="text/javascript">
     <!--
+    $('#content input[name=\'filter_name\']').keydown(function(e) {
+        if (e.keyCode == 13) {
+            $('#button-search').trigger('click');
+        }
+    });
     $('#button-search').bind('click', function() {
         url = 'index.php?route=product/search';
-
         var filter_name = $('#content input[name=\'filter_name\']').attr('value');
-
         if (filter_name) {
             url += '&filter_name=' + encodeURIComponent(filter_name);
         }
-
         var filter_category_id = $('#content select[name=\'filter_category_id\']').attr('value');
-
         if (filter_category_id > 0) {
             url += '&filter_category_id=' + encodeURIComponent(filter_category_id);
         }
-
         var filter_sub_category = $('#content input[name=\'filter_sub_category\']:checked').attr('value');
-
         if (filter_sub_category) {
             url += '&filter_sub_category=true';
         }
-
         var filter_description = $('#content input[name=\'filter_description\']:checked').attr('value');
-
         if (filter_description) {
             url += '&filter_description=true';
         }
-
         location = url;
     });
+
     function display(view) {
         if (view == 'list') {
             $('.product-grid').attr('class', 'product-list');
@@ -285,19 +311,23 @@
                 var image = $(element).find('.image-link').html();
                 var price = $(element).find('.price').html();
                 var rating = $(element).find('.rating').html();
+                var additionaldescription = $(element).find('.description-additional').html();
                 var cart = '<div class="cart catz">' + $(element).find('.cart').html() + '</div>';
                 image = (image != null) ? '<a href="' + $(element).find('.image-link').attr('href') + '" class="image-link">' + image + '</a>' : '';
                 price = (price != null) ? '<div class="price">' + price + '</div>' : '';
                 rating = (rating != null) ? '<div class="rating" title="' + $(element).find('.rating').attr('title') + '">' + rating + '</div>' : '';
+
+
                 html =
                         '<div class="struct-right"></div>' +
                                 '<div class="struct-left"></div>' +
                                 '<div class="struct-center">' +
+                                rating +
                                 image +
                                 '<div class="name">' + $(element).find('.name').html() + '</div>' +
                                 price +
                                 cart +
-                                rating +
+                                additionaldescription+
                                 '<div class="description">' + $(element).find('.description').html() + '</div>' +
                                 '</div>';
                 $(element).html(html);

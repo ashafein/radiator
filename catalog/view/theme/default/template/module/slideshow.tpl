@@ -1,4 +1,4 @@
-<div style="background-color: #fff;border: 1px solid #e2e2e2;padding:10px;height:280px;">
+<div style="background-color: #fff;border: 1px solid #e2e2e2;padding:10px;height:320px;">
     <div class="slideshow">
       <div id="featured"></div>
       <div id="slideshow<?php echo $module; ?>" class="nivoSlider" style="width: <?php echo $width; ?>px; height: <?php echo $height; ?>px;">

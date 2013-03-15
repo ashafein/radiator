@@ -185,7 +185,9 @@ class ControllerProductCategory extends Controller {
 				} else {
 					$rating = false;
 				}
-								
+                 $attribute_groups = $this->model_catalog_product->getProductAttributes($result['product_id']);
+                 $product_info = $this->model_catalog_product->getProduct($result['product_id']);
+
 				$this->data['products'][] = array(
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
@@ -196,8 +198,10 @@ class ControllerProductCategory extends Controller {
 					'tax'         => $tax,
 					'rating'      => $result['rating'],
 					'reviews'     => sprintf($this->language->get('text_reviews'), (int)$result['reviews']),
-					'href'        => $this->url->link('product/product', 'path=' . $this->request->get['path'] . '&product_id=' . $result['product_id'])
-				);
+					'href'        => $this->url->link('product/product', 'path=' . $this->request->get['path'] . '&product_id=' . $result['product_id']),
+                    'manufacturer'=> $product_info['manufacturer'],
+                    'attribute_groups' => $attribute_groups
+					);
 			}
 			
 			$url = '';

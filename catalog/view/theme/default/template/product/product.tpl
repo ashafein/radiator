@@ -92,7 +92,13 @@
                         <div id="information"></div>
                         <div class="description">
                             <?php if ($manufacturer) { ?>
-                            <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
+                                <span>
+                                    <?php echo $text_manufacturer; ?>
+                                </span>
+                                <a href="<?php echo $manufacturers; ?>"><
+                                    ?php echo $manufacturer; ?>
+                                </a>
+                                <br />
                             <?php } ?>
                             <span><?php echo $text_model; ?></span> <?php echo $model; ?><br />
                             <div class="attribute">
